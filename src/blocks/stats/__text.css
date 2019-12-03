@@ -1,0 +1,10 @@
+
+.stats__text {
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.stats__text:last-of-type {
+  margin-top: 4px;
+  margin-bottom: 80px;
+}

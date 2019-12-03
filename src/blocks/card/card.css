@@ -1,0 +1,13 @@
+@import url(./__container.css);
+@import url(./__image.css);
+@import url(./__description/__description.css);
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  color: #1A1B22;
+}

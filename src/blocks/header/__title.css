@@ -1,0 +1,15 @@
+
+.header__title {
+  height: 100%;
+
+  margin-top: 30px;
+  margin-bottom: 26px;
+  margin-left: 104px;
+
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+}

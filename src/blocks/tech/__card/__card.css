@@ -1,0 +1,7 @@
+@import url(./__card_name.css);
+@import url(./__card_logo.css);
+
+.tech__card {
+  width: 120px;
+  /* align-content: center; */
+}

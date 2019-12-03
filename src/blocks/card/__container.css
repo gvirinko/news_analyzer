@@ -1,0 +1,10 @@
+
+.card__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 104px;
+  margin-right: 104px;
+}

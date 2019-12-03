@@ -1,0 +1,21 @@
+
+.results__more {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  margin-bottom: 80px;
+  width: 288px;
+  height: 64px;
+  background: #fff;
+  border-radius: 80px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  align-content: center;
+  color: #1A1B22;
+}

@@ -1,0 +1,8 @@
+@import url(./__nav_item.css);
+@import url(./__nav_item_active.css);
+
+.header__nav {
+  margin-right: 101px;
+  /* display: flex; */
+  /* flex-direction: row; */
+}

@@ -1,0 +1,11 @@
+@import url(./__title.css);
+@import url(./__container.css);
+@import url(./__card/__card.css);
+
+
+.tech {
+  position: relative;
+  display: flex;
+
+  background: #F5F6F7;
+}

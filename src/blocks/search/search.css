@@ -1,0 +1,7 @@
+@import url(./__title.css);
+@import url(./__subtitle.css);
+@import url(./__form/__form.css);
+
+.search {
+  position: relative;
+}

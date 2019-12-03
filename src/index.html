@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Этот сайт является сервисом для анализа происходящих в мире событий">
+  <meta name="author" content="Ирина Гнатив">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="../src/images/favicon.ico">
+
+  <title>NewsAnalyzer</title>
+</head>
+<body>
+  <div class="screen_size__container">
+    <div class="screen_size">
+
+      <section class="lead">
+        <div class="header">
+          <div class="header__title">NewsAnalyzer</div>
+          <nav class="nav header__nav">
+            <a class="link nav_item header__nav_item header__nav_item_active nav__item_white" href="index.html">Главная</a>
+            <a class="link nav_item header__nav_item" href="about.html">О проекте</a>
+          </nav>
+        </div>
+        <div class="search">
+          <h1 class="search__title">Что в мире творится?</h1>
+          <h3 class="search__subtitle">Введите в поиске любую тему и узнайте,
+            насколько популярной она была в новостях за прошедшую неделю.</h3>
+          <form class="search__form" name="form_search">
+              <input type="text" name="input_search" required class="search__input" placeholder="Введите тему новости" autofocus>
+              <p class="validation validation-error__name"></p>
+              <button class="search__button">Искать</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="preloader">
+          <i class="circle-preloader"></i>
+          <div class="preloader__message">Идет поиск новостей...</div>
+      </section>
+
+      <section class="no-results">
+        <img class="no-results__emoji" src="./images/not-found_v1.png">
+        <h2 class="no-results__message">Ничего не найдено</h2>
+        <h3 class="no-results__clarification">К сожалению по вашему запросу ничего не найдено.</h3>
+      </section>
+
+      <section class="results">
+        <h2 class="text__title results__title">Результаты поиска</h2>
+        <a class="link text__link results__link" href="analytics.html">Посмотреть аналитику ></a>
+        <div class="card__container">
+
+          <div class="card">
+              <div class="card__image"></div>
+              <div class="card__description">
+              <p class="card__date">2 августа, 2019</p>
+              <h4 class="card__title">Национальное достояние – парки</h4>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <a class="link card__source" href="">Лента.ру</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__description">
+              <p class="card__date">2 августа, 2019</p>
+              <h4 class="card__title">Национальное достояние – парки</h4>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <a class="card__source" href="">Лента.ру</a>
+            </div>
+          </div>
+
+            <div class="card">
+                <div class="card__image"></div>
+                <div class="card__description">
+                <p class="card__date">2 августа, 2019</p>
+                <h4 class="card__title">Национальное достояние – парки</h4>
+                <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                  национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a class="card__source" href="">Лента.ру</a>
+              </div>
+            </div>
+
+              <div class="card">
+                  <div class="card__image"></div>
+                  <div class="card__description">
+                  <p class="card__date">2 августа, 2019</p>
+                  <h4 class="card__title">Национальное достояние – парки</h4>
+                  <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <a class="card__source" href="">Лента.ру</a>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="card__image"></div>
+                  <div class="card__description">
+                  <p class="card__date">2 августа, 2019</p>
+                  <h4 class="card__title">Национальное достояние – парки</h4>
+                  <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <a class="card__source" href="">Лента.ру</a>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="card__image"></div>
+                  <div class="card__description">
+                  <p class="card__date">2 августа, 2019</p>
+                  <h4 class="card__title">Национальное достояние – парки</h4>
+                  <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <a class="card__source" href="">Лента.ру</a>
+                </div>
+              </div>
+        </div>
+
+        <button class="results__more">Показать еще</button>
+
+
+      </section>
+
+      <section class="author">
+
+        <img src="<%=require('./images/Ira.jpeg')%>" class="author__avatar" alt="Фотография автора проекта">
+        <div class="author__container">
+          <h2 class="text__title">Об авторе</h2>
+          <div class="text__body">
+            <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+                 и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="commits">
+
+      </section>
+
+      <section class="footer">
+        <div class="footer__copyright">© 2019  Supersite</div>
+        <nav class="nav footer__nav">
+          <a class="link nav_item footer__nav_item">Главная</a>
+          <a class="link nav_item footer__nav_item">О проекте</a>
+          <a class="link nav_item footer__nav_item">Яндекс.Практикум</a>
+        </nav>
+        <div class="footer__social">
+          <a class="link" href=""><img src="../src/images/github.png" class="footer__social_icon" alt=""></a>
+          <a class="link" href=""><img src="../src/images/fb.png" class="footer__social_icon" alt=""></a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

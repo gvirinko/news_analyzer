@@ -1,0 +1,5 @@
+@import url(./nav__item.css);
+
+.nav {
+  display: flex;
+}

@@ -1,0 +1,12 @@
+@import url(./__page-address.css);
+@import url(./__page-address_inactive.css);
+@import url(./__keyword.css);
+@import url(./__text.css);
+@import url(./__number.css);
+@import url(./__mentions.css);
+
+.stats {
+  position: relative;
+  margin-left: 104px;
+  margin-right: 104px;
+}

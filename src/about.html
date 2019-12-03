@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Этот сайт является сервисом для анализа происходящих в мире событий">
+  <meta name="author" content="Ирина Гнатив">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="../src/images/favicon.ico">
+
+  <title>NewsAnalyzer</title>
+</head>
+<body>
+  <div class="screen_size__container">
+    <div class="screen_size">
+
+        <section class="header">
+          <div class="header__title">NewsAnalyzer</div>
+          <nav class="nav header__nav">
+            <a class="link nav_item header__nav_item" href="index.html">Главная</a>
+            <a class="link nav_item header__nav_item header__nav_item_active" href="about.html">О проекте</a>
+          </nav>
+        </section>
+
+      <section class="about_project">
+        <h1 class="text__title">Клиентам</h1>
+        <div class="text__body">
+            <p>Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
+            какими технологиями владеет.</p>
+            <p>Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+            Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах,
+            выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p>Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
+            пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+            <p>При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
+            Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
+            Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением.
+            А значит, потенциальная аудитория возрастает.</p>
+            <p>Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
+            к этому студенту.</p>
+        </div>
+      </section>
+
+      <section class="tech">
+        <h2 class="tech__title">Используемые технологии</h2>
+        <div class="tech__container">
+          <div class="tech__card">
+            <p class="tech__card_name">HTML</p>
+            <img class="tech__card_logo" src="<%=require('./images/html_logo.png')%>">
+          </div>
+
+          <div class="tech__card">
+            <p class="tech__card_name">CSS</p>
+            <img class="tech__card_logo" src="./images/css_logo.png">
+          </div>
+
+          <div class="tech__card">
+            <p class="tech__card_name">Java Script</p>
+            <img class="tech__card_logo" src="./images/js_logo.png" alt="JavaScript Logo">
+          </div>
+
+          <div class="tech__card">
+            <p class="tech__card_name">Webpack</p>
+            <img class="tech__card_logo" src="./images/webpack_logo.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="author">
+        <img src="<%=require('./images/Ira.jpeg')%>" class="author__avatar" alt="Фотография автора проекта">
+        <div class="author__container">
+          <h2 class="text__title">Об авторе</h2>
+          <div class="text__body">
+            <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+                 и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- <section class="commits">
+        <h2 class="text__title commits__title">История коммитов из GitHub</h2>
+        <a class="link text__link commits__link" href="">Открыть в Github ></a>
+
+        <div class="commits__container">
+
+          <div class="card-commit">
+            <p class="card-commit__date">14 августа, 2019</p>
+            <div class="card-commit__author">
+              <img class="card-commit__avatar">
+              <div class="card-commit__container">
+                <p class="card-commit__name">Антон Долинин</p>
+                <p class="card-commit__email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="card__text">Emmet (formerly Zen Coding) is a web-
+                developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+          </div>
+
+          <div class="card-commit">
+            <p class="commits__card_date">14 августа, 2019</p>
+            <div class="card__title">
+              <img class="commits__card_author_avatar">
+              <p class="commits__card_author_name">Антон Долинин</p>
+              <p class="commits__card_author_email">anton@yandex.ru</p>
+            </div>
+            <p class="commit__card_text">Emmet (formerly Zen Coding) is a web-
+                developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+          </div>
+
+
+
+
+        </div>
+      </section> -->
+
+
+
+
+      <section class="footer">
+        <div class="footer__copyright">© 2019  Supersite</div>
+        <nav class="nav footer__nav">
+          <a class="link nav_item footer__nav_item">Главная</a>
+          <a class="link nav_item footer__nav_item">О проекте</a>
+          <a class="link nav_item footer__nav_item">Яндекс.Практикум</a>
+        </nav>
+        <div class="footer__social">
+          <a class="link" href=""><img src="../src/images/github.png" class="footer__social_icon" alt=""></a>
+          <a class="link" href=""><img src="../src/images/fb.png" class="footer__social_icon" alt=""></a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</body>
+</html>

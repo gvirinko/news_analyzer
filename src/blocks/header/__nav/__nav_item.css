@@ -1,0 +1,19 @@
+/* @import url(./__nav_item_active.css); */
+
+.header__nav_item {
+  display: flex;
+  align-items: center;
+
+  margin-left: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  color: #B6BCBF;
+}
+
+.header__nav_item_active {
+  color: #1A1B22;
+  /* color: aqua; */
+  border-bottom: 3px solid #1A1B22;;
+}

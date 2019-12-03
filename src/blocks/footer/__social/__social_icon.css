@@ -1,0 +1,11 @@
+
+.footer__social_icon {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid blueviolet; */
+  margin-left: 28px;
+}
+
+.footer__social_icon:first-of-type {
+  /* margin-left: 0; */
+}

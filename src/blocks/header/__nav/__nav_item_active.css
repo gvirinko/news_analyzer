@@ -1,0 +1,5 @@
+
+.header__nav_item_active:hover {
+opacity: 1;
+cursor: default;
+}

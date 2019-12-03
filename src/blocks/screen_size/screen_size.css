@@ -1,0 +1,10 @@
+@import url(./__container.css);
+
+.screen_size {
+  position: relative;
+  min-width: 320px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+}

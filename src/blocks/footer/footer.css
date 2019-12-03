@@ -1,0 +1,9 @@
+@import url(./__copyright.css);
+@import url(./__nav/__nav.css);
+@import url(./__social/__social.css);
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,9 @@
+
+.tech__container {
+  position: relative;
+  display: flex;
+  margin-top: 93px;
+  margin-bottom: auto;
+
+  /* max-height: 144px; */
+}

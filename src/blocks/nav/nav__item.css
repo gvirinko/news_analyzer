@@ -1,0 +1,18 @@
+@import url(./nav__item_white.css);
+
+.nav_item {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+
+  text-align: center;
+
+  font-family: Roboto, Georgia, serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav_item:first-of-type {
+  margin-left: 0;
+}
+

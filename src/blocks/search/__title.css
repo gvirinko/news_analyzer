@@ -1,0 +1,14 @@
+
+.search__title {
+  margin-top: 80px;
+  margin-left: 416px;
+  /* margin-right: auto; */
+  margin-bottom: 32px;
+  max-width: 545px;
+
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+}
