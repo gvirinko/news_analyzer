@@ -4,7 +4,38 @@
 @import url(./__source.css);
 
 .card__description {
-  margin-left: auto;
-  margin-right: auto;
-  /* max-width: 352px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 304px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media (max-width: 320px) {
+  .card__description {
+    height: 250px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .card__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 304px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
 }

@@ -2,6 +2,8 @@
 .screen_size__container {
   position: relative;
   /* background: #F5F6F7; */
+  /* background-color: greenyellow; */
+
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

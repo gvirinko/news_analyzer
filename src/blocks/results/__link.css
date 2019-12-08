@@ -1,5 +1,29 @@
 
 .results__link {
   margin-top: 94px;
-  margin-right: 111px;
+  margin-right: 108px;
+}
+
+@media (max-width: 320px) {
+  .results__link {
+    position: relative;
+    margin-top: 0;
+    margin-left: 12px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .results__link {
+    margin-top: 94px;
+    margin-right: 108px;
+  }
 }

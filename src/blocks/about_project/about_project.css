@@ -4,3 +4,29 @@
   margin-left: 104px;
   margin-top: 80px;
 }
+
+@media (max-width: 320px) {
+  .about_project {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16.46px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .about_project {
+    width: 815px;
+    margin-left: 104px;
+    margin-top: 80px;
+  }
+
+}

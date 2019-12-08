@@ -4,12 +4,34 @@
 .header {
   position: relative;
   width: 100%;
-  /* max-height: 80px; */
   display: flex;
   justify-content: space-between;
-
-  /* background: rgba(196, 196, 196, 0.01); */
   box-shadow: inset 0px -1px 0px rgba(102, 66, 66, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* border-bottom-color: rgba(196, 196, 196, 0.01); */
+}
+
+@media (max-width: 320px) {
+  .header {
+    color: white;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px rgba(102, 66, 66, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
 }

@@ -1,8 +1,37 @@
 
 .text__body {
+  margin-top: 23px;
+  margin-bottom: 94px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media (max-width: 320px) {
+  .text__body {
+    margin-top: 16px;
+    margin-bottom: 0;
+    /* margin-bottom: 32px; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .text__body {
+    margin-top: 23px;
+    margin-bottom: 94px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
 }

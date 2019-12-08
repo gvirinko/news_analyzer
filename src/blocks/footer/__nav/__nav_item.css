@@ -1,6 +1,37 @@
 
 .footer__nav_item {
   margin-left: 40px;
+
   font-weight: normal;
+  line-height: 48px;
   color: #1A1B22;
+}
+
+.footer__nav_item:first-of-type {
+  /* margin-left: 40px; */
+  /* padding-left: 20px; */
+}
+
+@media (max-width: 320px) {
+  .footer__nav_item {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .footer__nav_item {
+    margin-left: 40px;
+
+    font-weight: normal;
+    color: #1A1B22;
+  }
+
 }

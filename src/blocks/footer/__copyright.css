@@ -11,3 +11,36 @@
 
   color: #B6BCBF;
 }
+
+@media (max-width: 320px) {
+  .footer__copyright {
+    order: 3;
+    margin-left: 16px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .footer__copyright {
+    margin-left: 104px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #B6BCBF;
+  }
+
+}

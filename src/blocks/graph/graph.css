@@ -1,0 +1,208 @@
+@import url(./__body/__body.css);
+
+.graph {
+  position: relative;
+  background-color: #F5F6F7;
+
+  margin-bottom: 0;
+  padding-bottom: 116px;
+}
+
+.graph__title {
+  margin-left: 104px;
+  margin-right: 104px;
+  /* margin-top: 80px; */
+  margin-bottom: 48px;
+  padding-top: 80px;
+
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #1A1B22;
+}
+
+.graph__heading {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 104px;
+  margin-right: 104px;
+  /* margin-top: 0; */
+  /* top: 0; */
+
+  border-bottom: 1px solid #1A1B22;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+.graph__heading_date {
+  width: 114px;
+  height: 44px;
+  /* height: 100%; */
+}
+
+.graph__heading_number {
+  width: 100%;
+}
+
+.graph__scale {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 208px;
+  margin-right: 104px;
+  margin-top: 13px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #B6BCBF;
+}
+
+.graph__scale_0 {
+  width: 0%;
+}
+.graph__scale_25 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_50 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_75 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_100 {
+  width: 25%;
+  text-align: end;
+}
+
+.graph__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 104px;
+  margin-right: 104px;
+  /* margin-bottom: 116px; */
+  margin-top: 1px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.graph__row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.graph__date {
+  width: 104px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 80px;
+
+  color: #1A1B22;
+}
+
+.graph__bar {
+  height: 24px;
+  left: 0;
+  width: 100%;
+  /* width: 1128px; */
+
+  align-self: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+  background-color: #2F71E5;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.graph__bar_15 {
+  max-width: calc(15% - 40px);
+}
+.graph__bar_18 {
+  max-width: calc(18% - 40px);
+}
+.graph__bar_11 {
+  max-width: calc(11% - 40px);
+}
+.graph__bar_39 {
+  max-width: calc(39% - 40px);
+}
+.graph__bar_45 {
+  max-width: calc(45% - 40px);
+}
+.graph__bar_73 {
+  max-width: calc(73% - 40px);
+}
+.graph__bar_34 {
+  max-width: calc(34% - 40px);
+}
+
+.test {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.graph-cont {
+  width: 100%;
+  position: relative;
+}
+
+/* .bar {
+  height: 30px;
+  left: 0;
+  max-width: 1128px;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+  background-color: lavender;
+}
+.bar1 {
+  max-width: 60%;
+}
+.bar2 {
+  max-width: 72%;
+}
+.bar3 {
+  max-width: 47%;
+}
+.bar4 {
+  max-width: 20%;
+} */
+

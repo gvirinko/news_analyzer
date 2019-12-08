@@ -10,3 +10,33 @@
 
   color: #B6BCBF;
 }
+
+@media (max-width: 320px) {
+  .card__date {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .card__date {
+    margin-top: 20px;
+    margin-bottom: 12px;
+
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #B6BCBF;
+  }
+
+}

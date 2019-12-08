@@ -1,7 +1,30 @@
 
+.tech__wrapper {
+  position: relative;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+/* background-color: lightcoral; */
+}
+
 .tech__card_logo {
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-bottom: 0; */
-  width: 100%;
+  /* align-self: center; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* margin-top: 0; */
+  /* padding-top: 0; */
+  /* margin-bottom: auto; */
+  /* height: 100%; */
+  /* vertical-align: middle; */
+  /* width: 100%; */
+  /* height: 97px; */
+  /* top: 0; */
+  /* border: 1px solid blue; */
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+
+
 }

@@ -12,3 +12,33 @@
 .search__input::placeholder {
   color: #b6bcbf;
 }
+
+@media (max-width: 320px) {
+  .search__input {
+    min-height: 46px;
+    width: calc(100% - 44px);
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .search__input {
+    width: 376px;
+    margin-left: 24px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1a1b22;
+  }
+
+}

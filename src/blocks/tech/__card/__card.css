@@ -3,5 +3,47 @@
 
 .tech__card {
   width: 120px;
+  margin-right: 40px;
+  /* position: relative; */
+  /* /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
   /* align-content: center; */
+  /* align-items: center; */
+  /* align-content: space-around; */
+  /* align-content: center; */
+  /* border: 1px solid blue; */
+}
+
+@media (max-width: 320px) {
+  .tech__card {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 41px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .tech__card {
+    width: 120px;
+    margin-right: 40px;
+    /* position: relative; */
+    /* /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-content: flex-start; */
+    /* align-items: flex-start; */
+    /* align-content: space-around; */
+    /* align-content: center; */
+    /* border: 1px solid blue; */
+  }
+
 }

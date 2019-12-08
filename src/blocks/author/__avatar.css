@@ -5,6 +5,42 @@
   margin-left: 104px;
   margin-right: 56px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 0;
+
   border-radius: 1000px;
+  border: 1px solid green;
+}
+
+@media (max-width: 320px) {
+  .author__avatar {
+    width: 272px;
+    height: 272px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    /* margin-bottom: 24px; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .author__avatar {
+    width: 464px;
+    height: 464px;
+    margin-left: 104px;
+    margin-right: 56px;
+    margin-top: 80px;
+    margin-bottom: 0;
+
+    border-radius: 1000px;
+    border: 1px solid green;
+  }
+
 }

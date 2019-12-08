@@ -1,0 +1,28 @@
+
+.text__para {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 320px) {
+
+  /* .text__para {
+    margin-bottom: 0;
+  } */
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .text__para {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+}

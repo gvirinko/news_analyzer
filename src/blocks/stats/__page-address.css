@@ -2,4 +2,12 @@
 .stats__page-address {
   margin-top: 40px;
   margin-bottom: 80px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1A1B22;
+
 }

@@ -1,6 +1,8 @@
 
 .card__source {
-  margin-top: 0;
+  margin-top: auto;
+  margin-bottom: 24px;
+
   font-family: 'Roboto Slab';
   font-weight: bold;
   font-size: 16px;
@@ -9,4 +11,34 @@
   text-transform: uppercase;
 
   color: #B6BCBF;
+}
+@media (max-width: 320px) {
+  .card__source {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .card__source {
+    margin-top: auto;
+    margin-bottom: 24px;
+
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #B6BCBF;
+  }
+
 }

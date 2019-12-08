@@ -25,18 +25,18 @@
       <section class="about_project">
         <h1 class="text__title">Клиентам</h1>
         <div class="text__body">
-            <p>Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
+            <p class="text__para">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
             какими технологиями владеет.</p>
-            <p>Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+            <p class="text__para">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
             Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах,
             выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-            <p>Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
+            <p class="text__para">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
             пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-            <p>При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
+            <p class="text__para">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
             Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
             Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением.
             А значит, потенциальная аудитория возрастает.</p>
-            <p>Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
+            <p class="text__para">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
             к этому студенту.</p>
         </div>
       </section>
@@ -46,90 +46,115 @@
         <div class="tech__container">
           <div class="tech__card">
             <p class="tech__card_name">HTML</p>
-            <img class="tech__card_logo" src="<%=require('./images/html_logo.png')%>">
+            <div class="tech__wrapper">
+              <img class="tech__card_logo" src="<%=require('./images/html_logo.png').default%>">
+            </div>
           </div>
 
           <div class="tech__card">
             <p class="tech__card_name">CSS</p>
-            <img class="tech__card_logo" src="./images/css_logo.png">
+            <div class="tech__wrapper">
+              <img class="tech__card_logo" src="<%=require('./images/css_logo.png').default%>">
+            </div>
           </div>
 
           <div class="tech__card">
             <p class="tech__card_name">Java Script</p>
-            <img class="tech__card_logo" src="./images/js_logo.png" alt="JavaScript Logo">
+            <div class="tech__wrapper">
+              <img class="tech__card_logo" src="<%=require('./images/js_logo.png').default%>" alt="JavaScript Logo">
+          </div>
           </div>
 
           <div class="tech__card">
             <p class="tech__card_name">Webpack</p>
-            <img class="tech__card_logo" src="./images/webpack_logo.png">
+            <div class="tech__wrapper">
+              <img class="tech__card_logo" src="<%=require('./images/webpack_logo.png').default%>">
+            </div>
           </div>
         </div>
       </section>
 
       <section class="author">
-        <img src="<%=require('./images/Ira.jpeg')%>" class="author__avatar" alt="Фотография автора проекта">
+        <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта">
         <div class="author__container">
           <h2 class="text__title">Об авторе</h2>
           <div class="text__body">
-            <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
-                чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
-                 и чем можете помочь потенциальным заказчикам.</p>
+              <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                  чем вы занимаетесь, какими технологиями разработки владеете.
+                  <br> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+                  и чем можете помочь потенциальным заказчикам.
+                  <br>Если хотите, оставьте свои контакты: email и телефон.
+                  Так заказчики смогут с вами связаться.
+                </p>
             </div>
         </div>
       </section>
 
-      <!-- <section class="commits">
-        <h2 class="text__title commits__title">История коммитов из GitHub</h2>
-        <a class="link text__link commits__link" href="">Открыть в Github ></a>
+      <section class="commits">
+          <h2 class="commits__title">История коммитов из GitHub</h2>
+          <a class="link commits__link" href="">Открыть в GitHub  ></a>
+          <div class="commits__container">
+              <div class="swiper-wrapper">
 
-        <div class="commits__container">
+                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
+                  <p class="commit__date">14 августа, 2019</p>
+                  <div class="commit__author">
+                    <div class="commit__author_avatar"></div>
+                    <div class="commit__author_wrapper">
+                      <h4 class="commit__author_name">Антон Долинин</h4>
+                      <p class="commit__author_email">anton@yandex.ru</p>
+                    </div>
+                  </div>
+                  <p class="commit__text">Emmet (formerly Zen Coding) is a web-
+                      developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                </a>
 
-          <div class="card-commit">
-            <p class="card-commit__date">14 августа, 2019</p>
-            <div class="card-commit__author">
-              <img class="card-commit__avatar">
-              <div class="card-commit__container">
-                <p class="card-commit__name">Антон Долинин</p>
-                <p class="card-commit__email">anton@yandex.ru</p>
+                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
+                  <p class="commit__date">14 августа, 2019</p>
+                  <div class="commit__author">
+                    <div class="commit__author_avatar"></div>
+                    <div class="commit__author_wrapper">
+                      <h4 class="commit__author_name">Мария Фёдорова</h4>
+                      <p class="commit__author_email">mariiifed@yandex.ru</p>
+                    </div>
+                  </div>
+                  <p class="commit__text">You can install this plugin directly from NetBeans Plugin Portal:
+                    in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
+                </a>
+
+                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
+                  <p class="commit__date">14 августа, 2019</p>
+                  <div class="commit__author">
+                    <div class="commit__author_avatar"></div>
+                    <div class="commit__author_wrapper">
+                      <h4 class="commit__author_name">Инга Иванова</h4>
+                      <p class="commit__author_email">ingaiva@yandex.ru</p>
+                    </div>
+                  </div>
+                  <p class="commit__text">With Emmet, you can type CSS-like expressions that can be
+                    dynamically parsed, and produce output depending on what you type in the abb... </p>
+                </a>
               </div>
-            </div>
-            <p class="card__text">Emmet (formerly Zen Coding) is a web-
-                developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
           </div>
+        </section>
 
-          <div class="card-commit">
-            <p class="commits__card_date">14 августа, 2019</p>
-            <div class="card__title">
-              <img class="commits__card_author_avatar">
-              <p class="commits__card_author_name">Антон Долинин</p>
-              <p class="commits__card_author_email">anton@yandex.ru</p>
-            </div>
-            <p class="commit__card_text">Emmet (formerly Zen Coding) is a web-
-                developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        <section class="footer">
+          <div class="footer__copyright">© 2019  Supersite</div>
+          <nav class="nav footer__nav">
+            <a class="link nav_item footer__nav_item" href="./index.html">Главная</a>
+            <a class="link nav_item footer__nav_item" href="./about.html">О проекте</a>
+            <a class="link nav_item footer__nav_item" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+          </nav>
+          <div class="footer__social">
+            <a class="link" href="https://github.com/"><img src="../src/images/github.png" class="footer__social_icon" alt=""></a>
+            <a class="link" href="https://www.facebook.com/"><img src="../src/images/fb.png" class="footer__social_icon" alt=""></a>
           </div>
-
-
-
-
-        </div>
-      </section> -->
-
-
-
-
-      <section class="footer">
-        <div class="footer__copyright">© 2019  Supersite</div>
-        <nav class="nav footer__nav">
-          <a class="link nav_item footer__nav_item">Главная</a>
-          <a class="link nav_item footer__nav_item">О проекте</a>
-          <a class="link nav_item footer__nav_item">Яндекс.Практикум</a>
-        </nav>
-        <div class="footer__social">
-          <a class="link" href=""><img src="../src/images/github.png" class="footer__social_icon" alt=""></a>
-          <a class="link" href=""><img src="../src/images/fb.png" class="footer__social_icon" alt=""></a>
-        </div>
-      </section>
+        </section>
 
     </div>
   </div>

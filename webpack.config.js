@@ -34,13 +34,17 @@ module.exports = {
               ]
           },
           {
-              test: /\.(png|jpe?g|gif|ico|svg)$/i,
-              use: {
-                loader: "file-loader",
+            test: /\.(png|jpe?g|gif|ico|svg)$/i,
+            use: [
+              'file-loader?name=images/[name].[ext]',
+              {
+                loader: 'image-webpack-loader',
                 options: {
-                  name: "./images/[name].[ext]",
-                },
-              },
+                  bypassOnDebug: true,
+                  disable: true
+                }
+              }
+            ]
           },
           {
               test: /\.(eot|ttf|woff|woff2)$/,

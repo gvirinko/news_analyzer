@@ -8,3 +8,34 @@
   margin-left: 104px;
   margin-right: 104px;
 }
+
+@media (max-width: 320px) {
+  .card__container {
+    flex-direction: column;
+    /* width: 100%; */
+    margin-left: 16px;;
+    margin-right: 16px;
+    margin-top: 36px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .card__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 104px;
+    margin-right: 104px;
+  }
+}
