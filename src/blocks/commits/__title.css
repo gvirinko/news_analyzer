@@ -1,14 +1,9 @@
 
-/* .commits__title {
-  margin-top: 72px;
-  margin-left: 104px;
-} */
-
 .commits__title {
   margin-top: 72px;
   margin-left: 104px;
-  padding-top: 72px;
   margin-bottom: 64px;
+
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: normal;
@@ -16,4 +11,41 @@
   line-height: 46px;
 
   color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+  .commits__title {
+  order: 1;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  font-size: 30px;
+  line-height: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .commits__title {
+    margin-top: 72px;
+    margin-left: 104px;
+    margin-bottom: 64px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #1A1B22;
+  }
+
 }

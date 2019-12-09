@@ -4,9 +4,10 @@
 
 .commits {
   position: relative;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   margin-top: 80px;
   padding-bottom: 80px;
@@ -14,76 +15,35 @@
   background: #F5F6F7;
 }
 
-.commit__date {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 24px;
+@media (max-width: 320px) {
+  .commits {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-bottom: 0;
 
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-
-  color: #B6BCBF;
+  }
 }
 
-.commit__author {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-left: 24px;
-  margin-right: 24px;
+@media (min-width: 320px) and (max-width: 768px) {
+
 }
 
-.commit__author_avatar {
-  width: 64px;
-  height: 64px;
-  /* margin-left: 24px; */
-  margin-right: 16px;
-  margin-bottom: 16px;
-  background: url(../../images/avatar_dolinin.png);
-  border-radius: 1000px;
-  /* border: 1px solid green; */
+@media (min-width: 768px) and (max-width: 1440px) {
+
 }
 
-.commit__author_wrapper {
-  /* position: relative; */
-  /* display: flex;
-  flex-direction: column; */
-}
+@media (min-width: 1440px) {
+  .commits {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 80px;
 
-.commit__author_name {
-  margin-top: 4px;
-  margin-bottom: 2px;
-
-  font-family: 'Roboto Slab';
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 30px;
-
-  color: #1A1B22;
-}
-
-.commit__author_email {
-  margin-top: 2px;
-
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-
-  color: #1A1B22;
-}
-
-.commit__text {
-  margin-top: 0;
-  margin-left: 24px;
-  margin-right: 24px;
-
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #1A1B22;
+    background: #F5F6F7;
+  }
 }

@@ -1,10 +1,8 @@
 @import url(./__nav_item.css);
-@import url(./__nav_item_active.css);
+/* @import url(./__nav_item_active.css); */
 
 .header__nav {
   margin-right: 101px;
-  /* display: flex; */
-  /* flex-direction: row; */
 }
 
 @media (max-width: 320px) {
@@ -15,7 +13,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 1440px) {
-
+.header__nav {
+    margin-right: 42px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

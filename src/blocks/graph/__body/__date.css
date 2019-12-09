@@ -1,19 +1,19 @@
+.graph__date {
+  width: 104px;
 
-.text__body {
-  margin-top: 23px;
-  margin-bottom: 94px;
   font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 80px;
+
+  color: #1A1B22;
 }
 
 @media (max-width: 320px) {
-  .text__body {
-    margin-top: 16px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    /* margin-bottom: 32px; */
+  .graph__date {
+    width: 80px;
+    line-height: 48px;
   }
 }
 
@@ -26,13 +26,15 @@
 }
 
 @media (min-width: 1440px) {
-  .text__body {
-    margin-top: 23px;
-    margin-bottom: 94px;
+  .graph__date {
+    width: 104px;
+
     font-family: Roboto;
+    font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 24px;
-  }
+    line-height: 80px;
 
+    color: #1A1B22;
+  }
 }

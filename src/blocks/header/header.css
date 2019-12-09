@@ -11,9 +11,7 @@
 }
 
 @media (max-width: 320px) {
-  .header {
-    color: white;
-  }
+
 }
 
 @media (min-width: 320px) and (max-width: 768px) {

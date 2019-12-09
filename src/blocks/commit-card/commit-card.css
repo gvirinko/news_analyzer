@@ -1,0 +1,42 @@
+@import url(./__date.css);
+@import url(./__author.css);
+@import url(./__avatar.css);
+@import url(./__name.css);
+@import url(./__email.css);
+@import url(./__text.css);
+
+.commit-card {
+  width: 400px;
+  height: 288px;
+  border-radius: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .commit-card {
+    width: 288px;
+    height: 264px;
+    margin-top: 2px;
+    /* margin-left: 16px; */
+    /* margin-right: 16px; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .commit-card {
+    width: 400px;
+    height: 288px;
+    border-radius: 16px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}

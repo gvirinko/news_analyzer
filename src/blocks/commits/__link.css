@@ -1,9 +1,5 @@
 
 .commits__link {
-  position: absolute;
-  top: 0;
-  right: 112px;
-  /* margin-right: 0; */
   margin-top: 85px;
   margin-right: 112px;
 
@@ -11,9 +7,48 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: right;
 
   color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+  .commits__link {
+    order: 3;
+    /* align-self: center; */
+    width: 288px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 32px;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid #1A1B22;
+    box-sizing: border-box;
+    border-radius: 80px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .commits__link {
+    margin-top: 85px;
+    margin-right: 112px;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+  }
+
 }

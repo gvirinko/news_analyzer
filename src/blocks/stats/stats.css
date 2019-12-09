@@ -1,5 +1,7 @@
 @import url(./__page-address.css);
 @import url(./__page-address_inactive.css);
+/* @import url(./__page-address_hidden.css); */
+@import url(./__title.css);
 @import url(./__keyword.css);
 @import url(./__text.css);
 @import url(./__number.css);
@@ -7,7 +9,32 @@
 
 .stats {
   position: relative;
-  margin-left: 104px;
-  margin-right: 104px;
+  width: calc(100% - 208px);
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .stats {
+    width: calc(100% - 32px);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .stats {
+    position: relative;
+    width: calc(100% - 208px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }

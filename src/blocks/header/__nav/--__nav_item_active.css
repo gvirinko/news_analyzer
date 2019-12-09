@@ -1,7 +1,11 @@
 
 .header__nav_item_active {
-  color: #1A1B22;
+  /* color: #1A1B22; */
   border-bottom: 3px solid #1A1B22;
+}
+
+.header__nav_item_dark {
+  color: #1A1B22;
 }
 
 .header__nav_item_active:hover {
@@ -11,7 +15,7 @@ cursor: default;
 
 @media (max-width: 320px) {
   .header__nav_item_active {
-    color: #fff;
+    /* color: #fff; */
     border-bottom: 3px solid #fff;
   }
 }

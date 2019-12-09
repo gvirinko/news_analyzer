@@ -1,6 +1,43 @@
+@import url(./__row.css);
+@import url(./__date.css);
+@import url(./__bar.css);
 
 .graph__body {
-  /* position: relative;
+  position: relative;
   display: flex;
-  flex-direction: row; */
+  flex-direction: column;
+  width: calc(100% - 208px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .graph__body {
+    width: calc(100% - 32px);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .graph__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 208px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }

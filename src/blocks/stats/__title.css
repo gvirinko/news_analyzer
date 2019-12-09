@@ -1,0 +1,22 @@
+
+.stats__title {
+
+}
+
+@media (max-width: 320px) {
+  .stats__title {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}

@@ -1,0 +1,56 @@
+.graph__scale {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 208px;
+  margin-right: 104px;
+  margin-top: 13px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #B6BCBF;
+}
+
+@media (max-width: 320px) {
+  .graph__scale {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}
+
+.graph__scale_0 {
+  width: 0%;
+}
+.graph__scale_25 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_50 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_75 {
+  width: 25%;
+  text-align: end;
+}
+.graph__scale_100 {
+  width: 25%;
+  text-align: end;
+}

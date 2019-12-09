@@ -1,8 +1,7 @@
 import "./style.css";
 
+import "../node_modules/swiper/js/swiper.js";
 import "./swiper.js";
-//import z from './images/html_logo.png';
-//import b from './images/css_logo.png';
 
 var mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
@@ -12,6 +11,7 @@ var mySwiper = new Swiper ('.swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -19,22 +19,22 @@ var mySwiper = new Swiper ('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 16,
   slidesPerView: 3.4,
-  coverflowEffect: {
-    rotate: 30,
-    //slideShadows: true,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 8,
+    },
+    1440: {
+      slidesPerView: 3.4,
+      spaceBetween: 16,
+    },
   },
 
-  fadeEffect: {
-    crossFade: true,
-  },
-  //effect: 'coverflow',
-  //effect: 'fade',
-  // loop: true,
   allowTouchMove: false,
 
 })

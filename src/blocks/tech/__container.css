@@ -11,6 +11,8 @@
   .tech__container {
     /* justify-content: flex-start; */
     margin-top: 40px;
+    margin-bottom: 21px;
+    /* padding-bottom: 0; */
     margin-left: 24px;
     margin-right: 24px;
     flex-wrap: wrap;

@@ -17,13 +17,13 @@
         <section class="header">
           <div class="header__title">NewsAnalyzer</div>
           <nav class="nav header__nav">
-            <a class="link nav_item header__nav_item" href="index.html">Главная</a>
-            <a class="link nav_item header__nav_item header__nav_item_active" href="about.html">О проекте</a>
+            <a class="link nav__item header__nav_item" href="index.html">Главная</a>
+            <a class="link nav__item nav__item_active nav__item_dark header__nav_item" href="about.html">О проекте</a>
           </nav>
         </section>
 
       <section class="about_project">
-        <h1 class="text__title">Клиентам</h1>
+        <h1 class="text__title about__title">Клиентам</h1>
         <div class="text__body">
             <p class="text__para">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
             какими технологиями владеет.</p>
@@ -79,13 +79,12 @@
         <div class="author__container">
           <h2 class="text__title">Об авторе</h2>
           <div class="text__body">
-              <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+              Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                   чем вы занимаетесь, какими технологиями разработки владеете.
                   <br> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
                   и чем можете помочь потенциальным заказчикам.
                   <br>Если хотите, оставьте свои контакты: email и телефон.
                   Так заказчики смогут с вами связаться.
-                </p>
             </div>
         </div>
       </section>
@@ -93,50 +92,49 @@
       <section class="commits">
           <h2 class="commits__title">История коммитов из GitHub</h2>
           <a class="link commits__link" href="">Открыть в GitHub  ></a>
-          <div class="commits__container">
+          <div class="swiper-container">
               <div class="swiper-wrapper">
 
-                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
-                  <p class="commit__date">14 августа, 2019</p>
-                  <div class="commit__author">
-                    <div class="commit__author_avatar"></div>
-                    <div class="commit__author_wrapper">
-                      <h4 class="commit__author_name">Антон Долинин</h4>
-                      <p class="commit__author_email">anton@yandex.ru</p>
+                <a class="link swiper-slide commit-card" href="https://github.com/IvanOpanasiuk/emmet">
+                <p class="commit-card__date">14 августа, 2019</p>
+                  <div class="commit-card__author">
+                    <img class="commit-card__avatar" src="<%=require('./images/avatar_dolinin.png').default%>">
+                    <div class="commit-card__wrapper">
+                      <h4 class="commit-card__name">Антон Дмитриев</h4>
+                      <p class="commit-card__email">anton@yandex.ru</p>
                     </div>
                   </div>
-                  <p class="commit__text">Emmet (formerly Zen Coding) is a web-
+                  <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
                       developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                 </a>
 
-                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
-                  <p class="commit__date">14 августа, 2019</p>
-                  <div class="commit__author">
-                    <div class="commit__author_avatar"></div>
-                    <div class="commit__author_wrapper">
-                      <h4 class="commit__author_name">Мария Фёдорова</h4>
-                      <p class="commit__author_email">mariiifed@yandex.ru</p>
+                <a class="link swiper-slide commit-card" href="https://github.com/IvanOpanasiuk/emmet">
+                  <p class="commit-card__date">14 августа, 2019</p>
+                  <div class="commit-card__author">
+                      <img class="commit-card__avatar" src="<%=require('./images/avatar_fedorova.png').default%>">
+                      <div class="commit-card__wrapper">
+                      <h4 class="commit-card__name">Мария Фёдорова</h4>
+                      <p class="commit-card__email">mariiifed@yandex.ru</p>
                     </div>
                   </div>
-                  <p class="commit__text">You can install this plugin directly from NetBeans Plugin Portal:
+                  <p class="commit-card__text">You can install this plugin directly from NetBeans Plugin Portal:
                     in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
                 </a>
 
-                <a class="link swiper-slide" href="https://github.com/IvanOpanasiuk/emmet">
-                  <p class="commit__date">14 августа, 2019</p>
-                  <div class="commit__author">
-                    <div class="commit__author_avatar"></div>
-                    <div class="commit__author_wrapper">
-                      <h4 class="commit__author_name">Инга Иванова</h4>
-                      <p class="commit__author_email">ingaiva@yandex.ru</p>
+                <a class="link swiper-slide commit-card" href="https://github.com/IvanOpanasiuk/emmet">
+                  <p class="commit-card__date">14 августа, 2019</p>
+                  <div class="commit-card__author">
+                      <img class="commit-card__avatar" src="<%=require('./images/avatar_ivanova.png').default%>">
+                    <div class="commit-card__wrapper">
+                      <h4 class="commit-card__name">Инга Иванова</h4>
+                      <p class="commit-card__email">ingaiva@yandex.ru</p>
                     </div>
                   </div>
-                  <p class="commit__text">With Emmet, you can type CSS-like expressions that can be
+                  <p class="commit-card__text">With Emmet, you can type CSS-like expressions that can be
                     dynamically parsed, and produce output depending on what you type in the abb... </p>
                 </a>
               </div>
               <div class="swiper-pagination"></div>
-
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
 

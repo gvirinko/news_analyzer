@@ -1,4 +1,4 @@
-
+@import url(./__title.css);
 .about_project {
   width: 815px;
   margin-left: 104px;
@@ -11,6 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 16.46px;
+    margin-bottom: 32px;
   }
 }
 

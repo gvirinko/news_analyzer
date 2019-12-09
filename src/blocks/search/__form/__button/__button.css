@@ -42,7 +42,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .search__button {
+    width: 160px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {

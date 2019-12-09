@@ -18,19 +18,55 @@
 
 @import url(./blocks/about_project/about_project.css);
 @import url(./blocks/tech/tech.css);
-@import url(./blocks/commits/commits.css);
-@import url(./blocks/card-commit/card-commit.css);
 @import url(./blocks/stats/stats.css);
 @import url(./blocks/graph/graph.css);
 
-@import url(./blocks/swiper/swiper.css);
+@import url(../node_modules/swiper/css/swiper.css);
+@import url(./blocks/commits/commits.css);
+@import url(./blocks/commit-card/commit-card.css);
 
-
-/*
-*  {
+/* *  {
   box-sizing: border-box;
   border: 1px solid red;
   } */
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 344px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .swiper-container {
+    order: 2;
+    /* width: 320px; */
+    height: 300px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1440px) {
+  .swiper-container {
+    width: 100%;
+    height: 344px;
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+
+
 
 @font-face {
     src: url(./fonts/roboto-regular-webfont.woff) format('woff');
