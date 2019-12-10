@@ -17,19 +17,20 @@
     font-size: 16px;
     margin-left: 11px;
   }
-
-  /* .header__nav_item_active {
-    color: #1A1B22;
-
-  } */
 }
 
-@media (min-width: 320px) and (max-width: 1440px) {
-
+@media (min-width: 320px) and (max-width: 768px) {
+  .header__nav_item {
+    font-size: 16px;
+    margin-left: 11px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+  .header__nav_item {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 1440px) {

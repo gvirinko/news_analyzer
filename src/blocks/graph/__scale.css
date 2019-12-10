@@ -23,15 +23,39 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-
+@media (min-width: 320px) and (max-width: 767px) {
+  .graph__scale {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .graph__scale {
+    margin-left: 144px;
+    margin-right: 40px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .graph__scale {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 208px;
+    margin-right: 104px;
+    margin-top: 13px;
+    height: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #B6BCBF;
+  }
 
 }
 

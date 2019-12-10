@@ -12,21 +12,22 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 1440px) {
-.header__nav {
-    margin-right: 42px;
+@media (min-width: 320px) and (max-width:768px) {
+  .header__nav {
+    margin-right: 14px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+  .header__nav {
+    margin-right: 42px;
+  }
 }
 
 @media (min-width: 1440px) {
   .header__nav {
     margin-right: 101px;
-    /* display: flex; */
-    /* flex-direction: row; */
   }
 
 }

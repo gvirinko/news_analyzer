@@ -17,11 +17,21 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    margin-top: 22px;
+    margin-right: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .footer__social {
+    position: relative;
+    margin-top: 22px;
+    margin-right: 42px;
+  }
 }
 
 @media (min-width: 1440px) {

@@ -28,11 +28,20 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .results__more {
+    margin-top: 12.87px;
+    margin-bottom: 44px;
+    height: 56px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .results__more {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 240px;
+    height: 56px;
+  }
 }
 
 @media (min-width: 1440px) {

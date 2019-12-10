@@ -18,11 +18,17 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .graph__date {
+    width: 80px;
+    line-height: 48px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .graph__date {
+    width: 104px;
+    line-height: 80px;
+  }
 }
 
 @media (min-width: 1440px) {

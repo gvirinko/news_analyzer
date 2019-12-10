@@ -19,11 +19,21 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .stats__text {
+    margin-top: 16px;
+  }
+  .stats__text:last-of-type {
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .stats__text {
+    margin-top: 24px;
+  }
+  .stats__text:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 1440px) {

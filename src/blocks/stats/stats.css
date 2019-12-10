@@ -1,6 +1,5 @@
 @import url(./__page-address.css);
 @import url(./__page-address_inactive.css);
-/* @import url(./__page-address_hidden.css); */
 @import url(./__title.css);
 @import url(./__keyword.css);
 @import url(./__text.css);
@@ -22,11 +21,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .stats {
+    width: calc(100% - 32px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .stats {
+    position: relative;
+    width: calc(100% - 80px);
+  }
 }
 
 @media (min-width: 1440px) {

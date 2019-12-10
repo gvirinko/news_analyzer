@@ -25,10 +25,9 @@
   .search__form {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 32px;
-    /* margin-top: 0; */
     width: 288px;
     height: 56px;
   }
@@ -36,14 +35,22 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .search__form {
-    margin-bottom: 80px;
-    width: 448px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 32px;
+    width: 288px;
     height: 56px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .search__form {
+    margin-bottom: 48px;
+    width: 448px;
+    height: 56px;
+  }
 }
 
 @media (min-width: 1440px) {

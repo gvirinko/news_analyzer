@@ -20,11 +20,29 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 450px) {
+  .footer {
+    /* flex-direction: row; */
+  }
 
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 1440px) {

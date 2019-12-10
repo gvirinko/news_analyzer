@@ -18,17 +18,22 @@
     width: 288px;
     height: 264px;
     margin-top: 2px;
-    /* margin-left: 16px; */
-    /* margin-right: 16px; */
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .commit-card {
+    width: 288px;
+    height: 264px;
+    margin-top: 2px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .commit-card {
+    width: 336px;
+    height: 242px;
+  }
 }
 
 @media (min-width: 1440px) {

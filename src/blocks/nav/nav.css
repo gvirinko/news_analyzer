@@ -1,6 +1,4 @@
 @import url(./__item.css);
-@import url(./__item_active_dark.css);
-@import url(./__item_active_white.css);
 
 .nav {
   display: flex;

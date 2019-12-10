@@ -1,5 +1,5 @@
 @import url(./__title.css);
-@import url(./__link.css);
+@import url(./__github.css);
 @import url(./__container.css);
 
 .commits {
@@ -21,16 +21,32 @@
     justify-content: flex-start;
     margin-top: 0;
     padding-bottom: 0;
-
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .commits {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
+  .commits {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 0px;
 
+    background: #F5F6F7;
+  }
 }
 
 @media (min-width: 1440px) {

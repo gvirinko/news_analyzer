@@ -22,12 +22,17 @@ var mySwiper = new Swiper ('.swiper-container', {
   centeredSlides: true,
   spaceBetween: 16,
   slidesPerView: 3.4,
+  // uniqueNavElements: true,
 
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1.1,
       spaceBetween: 8,
+    },
+    768: {
+      slidesPerView: 2.2,
+      spaceBetween: 8,
+      centeredSlides: false,
     },
     1440: {
       slidesPerView: 3.4,

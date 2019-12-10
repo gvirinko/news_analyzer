@@ -23,7 +23,15 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .search__subtitle {
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
 
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -31,6 +39,9 @@
     max-width: 452px;
     margin-left: 160px;
     margin-bottom: 24px;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

@@ -16,11 +16,24 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .about_project {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16.46px;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .about_project {
+    width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29.87px;
+    /* padding-bottom: 32px; */
+    margin-bottom: 58px;
+  }
 }
 
 @media (min-width: 1440px) {

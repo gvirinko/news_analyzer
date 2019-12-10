@@ -19,11 +19,18 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .footer__nav_item {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
+  .footer__nav_item {
+    margin-left: 25px;
 
+    font-weight: normal;
+    color: #1A1B22;
+  }
 }
 
 @media (min-width: 1440px) {

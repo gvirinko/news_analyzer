@@ -12,6 +12,11 @@
   line-height: 24px;
 }
 
+.nav__item_active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
 .nav__item:first-of-type {
   margin-left: 0;
 }

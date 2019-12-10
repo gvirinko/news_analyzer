@@ -6,6 +6,7 @@
 .tech {
   position: relative;
   display: flex;
+  flex-direction: row;
 
   background: #F5F6F7;
 }
@@ -17,18 +18,22 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .tech {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .tech {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1440px) {
   .tech {
     position: relative;
     display: flex;
-
+    flex-direction: row;
     background: #F5F6F7;
   }
 

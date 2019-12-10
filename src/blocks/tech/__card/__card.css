@@ -4,15 +4,6 @@
 .tech__card {
   width: 120px;
   margin-right: 40px;
-  /* position: relative; */
-  /* /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* align-items: center; */
-  /* align-content: space-around; */
-  /* align-content: center; */
-  /* border: 1px solid blue; */
 }
 
 @media (max-width: 320px) {
@@ -29,11 +20,29 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .tech__card {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
 
+  .tech__card:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
+  .tech__card {
+    width: 120px;
+    margin-right: 64px;
+    margin-left: 0;
+    margin-bottom: 45px;
+  }
 
+  .tech__card:last-of-type {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1440px) {

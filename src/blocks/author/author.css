@@ -17,11 +17,17 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+  .author {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-
+  .author {
+    flex-direction: row;
+    margin-bottom: 48px;
+  }
 }
 
 @media (min-width: 1440px) {
