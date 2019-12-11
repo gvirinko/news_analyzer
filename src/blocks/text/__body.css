@@ -2,7 +2,7 @@
 .text__body {
   margin-top: 23px;
   margin-bottom: 94px;
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -13,7 +13,6 @@
     margin-top: 16px;
     margin-bottom: 0;
     padding-bottom: 0;
-    /* margin-bottom: 32px; */
   }
 }
 
@@ -33,10 +32,9 @@
   .text__body {
     margin-top: 23px;
     margin-bottom: 94px;
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
   }
-
 }

@@ -1,7 +1,7 @@
 .graph__date {
   width: 104px;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -35,7 +35,7 @@
   .graph__date {
     width: 104px;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

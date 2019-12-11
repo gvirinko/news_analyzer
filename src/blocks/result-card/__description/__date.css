@@ -1,5 +1,5 @@
 
-.card__date {
+.result-card__date {
   margin-top: 20px;
   margin-bottom: 12px;
 
@@ -12,28 +12,28 @@
 }
 
 @media (max-width: 320px) {
-  .card__date {
+  .result-card__date {
     margin-top: 15px;
     margin-bottom: 15px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .card__date {
+  .result-card__date {
     margin-top: 15px;
     margin-bottom: 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .card__date {
+  .result-card__date {
     margin-top: 16px;
     margin-bottom: 12px;
   }
 }
 
 @media (min-width: 1440px) {
-  .card__date {
+  .result-card__date {
     margin-top: 20px;
     margin-bottom: 12px;
 
@@ -44,5 +44,4 @@
 
     color: #B6BCBF;
   }
-
 }

@@ -25,8 +25,6 @@
   .search__form {
     display: flex;
     flex-direction: column;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin-bottom: 32px;
     width: 288px;
     height: 56px;
@@ -37,8 +35,6 @@
   .search__form {
     display: flex;
     flex-direction: column;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin-bottom: 32px;
     width: 288px;
     height: 56px;
@@ -68,5 +64,4 @@
     backdrop-filter: blur(8px);
     border-radius: 100px;
   }
-
 }

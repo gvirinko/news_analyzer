@@ -44,9 +44,16 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "browserslist": "^4.8.2",
     "core-js": "^3.4.1",
     "flickity": "^2.2.1",
     "normalize.css": "^8.0.1",
     "swiper": "^5.2.1"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

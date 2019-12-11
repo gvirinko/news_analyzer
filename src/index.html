@@ -7,7 +7,6 @@
   <meta name="author" content="Ирина Гнатив">
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="shortcut icon" href="../src/images/favicon.ico">
-
   <title>NewsAnalyzer</title>
 </head>
 <body>
@@ -27,9 +26,8 @@
           <h3 class="search__subtitle">Введите в поиске любую тему и узнайте,
             насколько популярной она была в новостях за прошедшую неделю.</h3>
           <form class="search__form" name="form_search">
-              <input type="text" name="input_search" required class="search__input" placeholder="Введите тему новости" autofocus>
+              <input type="text" name="input_search" required minlength="2" maxlength="30" class="search__input" placeholder="Введите тему новости" autofocus>
               <!-- <p class="validation validation-error__name">No error</p> -->
-
               <button class="search__button">Искать</button>
           </form>
         </div>
@@ -41,79 +39,80 @@
       </section> -->
 
        <!-- <section class="no-results">
-        <img class="no-results__emoji" src="<%=require('./images/not-found_v1.png').default%>">
+        <img class="no-results__emoji" src="<%=require('./images/not-found_v1.png').default%>" alt="Печальный emoji">
         <h2 class="no-results__message">Ничего не найдено</h2>
         <h3 class="no-results__clarification">К сожалению, по вашему запросу ничего не найдено.</h3>
       </section> -->
 
       <section class="results">
         <h2 class="text__title results__title">Результаты поиска</h2>
-        <a class="link text__link results__link" href="analytics.html">Посмотреть аналитику ></a>
-        <div class="card__container">
+        <a class="link text__link results__link" href="analytics.html">Посмотреть аналитику
+          <img src="<%=require('./images/arrow.png').default%>" alt=""></a>
+        <div class="result-card__container">
 
-          <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_08.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_08.png').default%>" alt="Фото травы 1">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Национальное достояние – парки</h4>
+              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
                 национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <a class="link card__source" href="">Лента.ру</a>
+              <a class="link result-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
             </div>
           </div>
 
-          <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_04.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Лесные огоньки: история одной фотографии</h4>
-              <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_04.png').default%>" alt="Фото травы 2">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
                 чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-              <a class="link card__source" href="">Медуза</a>
+              <a class="link result-card__source" href="https://meduza.io/" target="_blank">Медуза</a>
             </div>
           </div>
 
-          <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_07.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-              <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_07.png').default%>" alt="Фото травы 3">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
                 о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-              <a class="link card__source" href="">РИА</a>
+              <a class="link result-card__source" href="https://ria.ru/" target="_blank">РИА</a>
             </div>
           </div>
 
-          <!-- <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_06.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+          <!-- <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_06.png').default%>" alt="Фото травы 4">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Национальное достояние – парки</h4>
+              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
                 национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <a class="link card__source" href="">Дзен</a>
+              <a class="link result-card__source" href="https://zen.yandex.ru/" target="_blank">Дзен</a>
             </div>
           </div>
 
-          <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_01.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Лесные огоньки: история одной фотографии</h4>
-              <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_01.png').default%>" alt="Фото травы 5">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
                 чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-              <a class="link card__source" href="">Афиша</a>
+              <a class="link result-card__source" href="https://www.afisha.ru/" target="_blank">Афиша</a>
             </div>
           </div>
 
-          <div class="card">
-              <img class="card__image" src="<%=require('./images/cards/image_05.png').default%>">
-              <div class="card__description">
-              <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-              <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_05.png').default%>" alt="Фото травы 6">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
                 о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-              <a class="link card__source" href="">Медиазона</a>
+              <a class="link result-card__source" href="https://zona.media/" target="_blank">Медиазона</a>
             </div>
           </div> -->
 
@@ -126,6 +125,10 @@
 
       <section class="author">
 
+          <!-- <picture>
+              <source srcset="<%=require('./images/image-03-big.png').default%>" media="(min-width: 768px)">
+              <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="moo">
+          </picture> -->
         <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта">
         <div class="author__container">
           <h2 class="text__title author__title">Об авторе</h2>
@@ -133,9 +136,9 @@
             <p class="text__para author__para">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем вы занимаетесь, какими технологиями разработки владеете.</p>
             <p class="text__para author__para">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
-                 и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон.
-                 Так заказчики смогут с вами связаться.</p>
-            </div>
+                и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон.
+                Так заказчики смогут с вами связаться.</p>
+          </div>
         </div>
       </section>
 
@@ -144,11 +147,11 @@
         <nav class="nav footer__nav">
           <a class="link nav__item footer__nav_item" href="./index.html">Главная</a>
           <a class="link nav__item footer__nav_item" href="./about.html">О проекте</a>
-          <a class="link nav__item footer__nav_item" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+          <a class="link nav__item footer__nav_item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
         </nav>
         <div class="footer__social">
-          <a class="link" href="https://github.com/"><img src="../src/images/github.png" class="footer__social_icon" alt=""></a>
-          <a class="link" href="https://www.facebook.com/"><img src="../src/images/fb.png" class="footer__social_icon" alt=""></a>
+          <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social_icon" alt="Логотип GitHub"></a>
+          <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social_icon" alt="Логотип Facebook"></a>
         </div>
       </section>
 

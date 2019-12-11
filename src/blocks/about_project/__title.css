@@ -1,8 +1,4 @@
 
-.about__title {
-
-}
-
 @media (max-width: 320px) {
   .about__title {
     line-height: 40px;
@@ -23,6 +19,7 @@
 }
 
 @media (min-width: 1440px) {
-
-
+  .about__title {
+    line-height: 46px;
+  }
 }

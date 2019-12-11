@@ -2,11 +2,10 @@
 .tech__title {
   max-width: 344px;
   margin-left: 104px;
-  /* margin-right: 192px; */
   margin-top: 80px;
   margin-bottom: 162px;
 
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Georgia, serif;
   font-weight: normal;
   font-size: 40px;
   line-height: 46px;
@@ -54,7 +53,6 @@
   .tech__title {
     max-width: 344px;
     margin-left: 104px;
-    /* margin-right: 192px; */
     margin-top: 80px;
     margin-bottom: 162px;
 
@@ -65,5 +63,4 @@
 
     color: #1A1B22;
   }
-
 }

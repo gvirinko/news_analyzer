@@ -6,9 +6,7 @@
   margin-right: 56px;
   margin-top: 80px;
   margin-bottom: 0;
-
   border-radius: 1000px;
-  border: 1px solid green;
 }
 
 @media (max-width: 320px) {
@@ -49,9 +47,6 @@
     margin-right: 56px;
     margin-top: 80px;
     margin-bottom: 0;
-
     border-radius: 1000px;
-    border: 1px solid green;
   }
-
 }

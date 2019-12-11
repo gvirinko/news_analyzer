@@ -24,15 +24,6 @@
   }
 }
 
-/* @media (min-width: 450px) and (max-width: 768px) {
-  .footer__nav {
-    flex-direction: column;
-    order: 1;
-    margin-top: 8px;
-    margin-left: 0;
-  }
-} */
-
 @media (min-width: 768px) and (max-width: 1440px) {
   .footer__nav {
     flex-direction: row;
@@ -49,5 +40,4 @@
     margin-right: auto;
     display: flex;
   }
-
 }

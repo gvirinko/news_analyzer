@@ -2,16 +2,13 @@
   height: 24px;
   left: 0;
   width: 100%;
-
   align-self: center;
-  /* line-height: 30px; */
-  /* font-size: 16px; */
   color: white;
   padding: 0 0 0 10px;
   position: relative;
   background-color: #2F71E5;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -43,16 +40,12 @@
     position: relative;
     display: flex;
     padding: 0 0 0 10px;
-
     align-self: center;
-
     align-items: center;
-    /* line-height: 30px; */
-    /* font-size: 16px; */
 
     background-color: #2F71E5;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -63,7 +56,6 @@
     color: #FFFFFF;
   }
 }
-
 
 .graph__bar_15 {
   max-width: calc(15%);

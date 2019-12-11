@@ -6,20 +6,16 @@
   margin-right: 0;
 }
 
-.footer__social_icon:first-of-type {
-  /* margin-left: 0; */
-}
-
 @media (max-width: 320px) {
 
 .footer__social_icon {
   margin-left: 0;
   margin-right: 28px;
 }
-  .footer__social_icon:last-of-type {
-    margin-left: 28px;
-    margin-right: 0;
-  }
+.footer__social_icon:last-of-type {
+  margin-left: 28px;
+  margin-right: 0;
+}
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -27,10 +23,10 @@
     margin-left: 0;
     margin-right: 28px;
   }
-    .footer__social_icon:last-of-type {
-      margin-left: 28px;
-      margin-right: 0;
-    }
+  .footer__social_icon:last-of-type {
+    margin-left: 28px;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -49,5 +45,4 @@
     margin-left: 28px;
     margin-right: 0;
   }
-
 }

@@ -1,6 +1,5 @@
 @import url(./__title.css);
 @import url(./__github.css);
-@import url(./__container.css);
 
 .commits {
   position: relative;
@@ -39,7 +38,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-wrap: nowrap; */
     justify-content: space-between;
     width: 100%;
     margin-top: 40px;

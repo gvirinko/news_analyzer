@@ -4,7 +4,7 @@
   margin-left: 104px;
   margin-bottom: 64px;
 
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Georgia, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -58,7 +58,7 @@
     margin-bottom: 64px;
     max-width: 712px;
 
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab', Georgia, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -66,5 +66,4 @@
 
     color: #1A1B22;
   }
-
 }

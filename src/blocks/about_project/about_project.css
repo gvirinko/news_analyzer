@@ -1,4 +1,5 @@
 @import url(./__title.css);
+
 .about_project {
   width: 815px;
   margin-left: 104px;
@@ -31,7 +32,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 29.87px;
-    /* padding-bottom: 32px; */
     margin-bottom: 58px;
   }
 }
@@ -42,5 +42,4 @@
     margin-left: 104px;
     margin-top: 80px;
   }
-
 }

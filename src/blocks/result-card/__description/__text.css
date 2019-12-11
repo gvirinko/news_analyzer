@@ -1,9 +1,9 @@
 
-.card__text {
+.result-card__text {
   margin-top: 16px;
   margin-bottom: 0;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -11,41 +11,46 @@
 }
 
 @media (max-width: 320px) {
-  .card__text {
+  .result-card__text {
+    position: relative;
     margin-top: 8px;
     width: calc(100%);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
-    white-space: no-wrap;
-    text-overflow: ellipsis;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .card__text {
+  .result-card__text {
+    position: relative;
     margin-top: 8px;
     width: calc(100%);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
-    white-space: no-wrap;
-    text-overflow: ellipsis;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .card__text {
+  .result-card__text {
     margin-top: 10px;
     width: calc(100%);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
     overflow: hidden;
-    white-space: no-wrap;
-    text-overflow: ellipsis;
   }
 }
 
 @media (min-width: 1440px) {
-  .card__text {
+  .result-card__text {
     margin-top: 16px;
     margin-bottom: 0;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

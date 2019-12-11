@@ -6,7 +6,7 @@
   margin-right: 104px;
   margin-top: 13px;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -46,7 +46,7 @@
     margin-top: 13px;
     height: 0;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -56,7 +56,6 @@
 
     color: #B6BCBF;
   }
-
 }
 
 .graph__scale_0 {

@@ -3,7 +3,7 @@
   width: 376px;
   margin-left: 24px;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -32,7 +32,6 @@
   .search__input {
     width: 292px;
     margin-left: 24px;
-
   }
 }
 
@@ -46,5 +45,4 @@
     line-height: 22px;
     color: #1a1b22;
   }
-
 }

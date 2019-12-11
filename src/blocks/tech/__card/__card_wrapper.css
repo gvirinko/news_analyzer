@@ -1,0 +1,9 @@
+
+.tech__card_wrapper {
+  position: relative;
+  height: 97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

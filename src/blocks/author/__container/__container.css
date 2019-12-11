@@ -29,7 +29,6 @@
 
 @media (min-width: 768px) and (max-width: 1440px) {
   .author__container {
-    /* width: 424px; */
     margin-top: 40px;
     margin-bottom: 0;
     margin-right: 40px;
@@ -44,5 +43,4 @@
 
     color: #1A1B22;
   }
-
 }

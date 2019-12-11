@@ -4,7 +4,7 @@
   margin-top: 33px;
   margin-bottom: 25px;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -36,18 +36,15 @@
     margin-left: 16px;
     margin-top: 25px;
     margin-bottom: 22px;
-
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
   .footer__copyright {
-    /* order: 3; */
     margin-left: 16px;
     margin-top: 25px;
     margin-bottom: 22px;
-    /* margin-right: 40px; */
   }
 }
 
@@ -57,7 +54,7 @@
     margin-top: 33px;
     margin-bottom: 25px;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;

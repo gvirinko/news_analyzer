@@ -1,8 +1,4 @@
 
-.stats__title {
-
-}
-
 @media (max-width: 320px) {
   .stats__title {
     margin-top: 16px;
@@ -24,5 +20,9 @@
 }
 
 @media (min-width: 1440px) {
-
+  .stats__title {
+    margin-top: 64px;
+    font-size: 40px;
+    line-height: 46px;
+  }
 }

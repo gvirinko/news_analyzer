@@ -11,7 +11,7 @@
   color: #fff;
   border-color: #2F71E5;
 
-  font-family: Roboto;
+  font-family: Roboto, Georgia, serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -19,8 +19,6 @@
 
 
 .search__button:active {
-  /* background: #2A65CC; */
-  /* background: red; */
   cursor: pointer;
 }
 
@@ -38,7 +36,6 @@
     width: 288px;
     min-height: 56px;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -76,10 +73,9 @@
     border-radius: 100px;
     color: #fff;
 
-    font-family: Roboto;
+    font-family: Roboto, Georgia, serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
   }
-
 }
