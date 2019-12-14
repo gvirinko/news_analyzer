@@ -1,13 +1,15 @@
 @import url(./__title.css);
+@import url(./__text.css);
+@import url(./__para.css);
 
-.about_project {
+.about-project {
   width: 815px;
   margin-left: 104px;
   margin-top: 80px;
 }
 
 @media (max-width: 320px) {
-  .about_project {
+  .about-project {
     width: calc(100% - 32px);
     margin-left: auto;
     margin-right: auto;
@@ -17,7 +19,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .about_project {
+  .about-project {
     width: calc(100% - 32px);
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +29,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .about_project {
+  .about-project {
     width: calc(100% - 80px);
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +39,7 @@
 }
 
 @media (min-width: 1440px) {
-  .about_project {
+  .about-project {
     width: 815px;
     margin-left: 104px;
     margin-top: 80px;

@@ -1,7 +1,9 @@
+
 .swiper-container {
   width: 100%;
   height: 344px;
   margin-bottom: 0;
+  position: relative;
 }
 
 @media (max-width: 320px) {
@@ -32,6 +34,27 @@
     margin-bottom: 0;
   }
 
+  .fade-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 60px;
+    border-radius: 16px;
+    width: 70px;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #fff 100%);
+
+  }
+  .fade-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 60px;
+    border-radius: 16px;
+    width: 70px;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #fff 100%);
+  }
 }
 
 /* Navigation buttons */

@@ -8,6 +8,12 @@
   font-size: 16px;
   line-height: 22px;
   color: #1a1b22;
+  border: none;
+}
+
+.search__input:focus {
+  /* border: none; */
+  outline: none;
 }
 
 .search__input::placeholder {

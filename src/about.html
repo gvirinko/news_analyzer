@@ -10,32 +10,32 @@
   <title>NewsAnalyzer</title>
 </head>
 <body>
-  <div class="screen_size__container">
-    <div class="screen_size">
+  <div class="screen-size">
+    <div class="screen-size_container">
 
         <section class="header">
           <div class="header__title">NewsAnalyzer</div>
           <nav class="nav header__nav">
-            <a class="link nav__item header__nav_item" href="index.html">Главная</a>
-            <a class="link nav__item nav__item_active header__nav_item header_color_dark" href="about.html">О проекте</a>
+            <a class="link nav__item header__nav-item" href="index.html">Главная</a>
+            <a class="link nav__item nav__item_active header__nav-item header__nav-item_color_dark" href="about.html">О проекте</a>
           </nav>
         </section>
 
-      <section class="about_project">
-        <h1 class="text__title about__title">Клиентам</h1>
-        <div class="text__body">
-            <p class="text__para">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
+      <section class="about-project">
+        <h1 class="about-project__title">Клиентам</h1>
+        <div class="about-project__text">
+            <p class="about-project__para">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
             какими технологиями владеет.</p>
-            <p class="text__para">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+            <p class="about-project__para">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
             Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах,
             выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-            <p class="text__para">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
+            <p class="about-project__para">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
             пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-            <p class="text__para">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
+            <p class="about-project__para">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
             Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
             Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением.
             А значит, потенциальная аудитория возрастает.</p>
-            <p class="text__para">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
+            <p class="about-project__para">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
             к этому студенту.</p>
         </div>
       </section>
@@ -43,31 +43,31 @@
       <section class="tech">
         <h2 class="tech__title">Используемые технологии</h2>
         <div class="tech__container">
-          <div class="tech__card">
-            <p class="tech__card_name">HTML</p>
-            <div class="tech__card_wrapper">
-              <img class="tech__card_logo" src="<%=require('./images/html_logo.png').default%>" alt="Логотип HTML">
+          <div class="tech-card">
+            <p class="tech-card__name">HTML</p>
+            <div class="tech-card__wrapper">
+              <img class="tech-card__logo" src="<%=require('./images/html_logo.png').default%>" alt="Логотип HTML">
             </div>
           </div>
 
-          <div class="tech__card">
-            <p class="tech__card_name">CSS</p>
-            <div class="tech__card_wrapper">
-              <img class="tech__card_logo" src="<%=require('./images/css_logo.png').default%>" alt="Логотип CSS">
+          <div class="tech-card">
+            <p class="tech-card__name">CSS</p>
+            <div class="tech-card__wrapper">
+              <img class="tech-card__logo" src="<%=require('./images/css_logo.png').default%>" alt="Логотип CSS">
             </div>
           </div>
 
-          <div class="tech__card">
-            <p class="tech__card_name">Java Script</p>
-            <div class="tech__card_wrapper">
-              <img class="tech__card_logo" src="<%=require('./images/js_logo.png').default%>" alt="Логотип JavaScript">
+          <div class="tech-card">
+            <p class="tech-card__name">Java Script</p>
+            <div class="tech-card__wrapper">
+              <img class="tech-card__logo" src="<%=require('./images/js_logo.png').default%>" alt="Логотип JavaScript">
           </div>
           </div>
 
-          <div class="tech__card">
-            <p class="tech__card_name">Webpack</p>
-            <div class="tech__card_wrapper">
-              <img class="tech__card_logo" src="<%=require('./images/webpack_logo.png').default%>" alt="Логотип Webpack">
+          <div class="tech-card">
+            <p class="tech-card__name">Webpack</p>
+            <div class="tech-card__wrapper">
+              <img class="tech-card__logo" src="<%=require('./images/webpack_logo.png').default%>" alt="Логотип Webpack">
             </div>
           </div>
         </div>
@@ -76,15 +76,15 @@
       <section class="author">
         <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта">
         <div class="author__container">
-          <h2 class="text__title">Об авторе</h2>
-          <div class="text__body">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__text">
               Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
               чем вы занимаетесь, какими технологиями разработки владеете.
               <br> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились
               и чем можете помочь потенциальным заказчикам.
               <br>Если хотите, оставьте свои контакты: email и телефон.
               Так заказчики смогут с вами связаться.
-            </div>
+          </p>
         </div>
       </section>
 
@@ -94,6 +94,7 @@
             <img src="<%=require('./images/arrow.png').default%>" alt="" class="link__arrow"></a>
           </a>
           <div class="swiper-container">
+            <div class="fade-left"></div>
             <div class="swiper-wrapper">
 
               <a class="link swiper-slide commit-card" href="https://github.com/IvanOpanasiuk/emmet" target="_blank">
@@ -135,7 +136,8 @@
                   dynamically parsed, and produce output depending on what you type in the abb... </p>
               </a>
             </div>
-              <div class="swiper-pagination"></div>
+            <div class="fade-right"></div>
+              <div class="swiper-pagination swiper-pagination-black"></div>
               <div class="swiper-button-prev swiper-button-black"></div>
               <div class="swiper-button-next swiper-button-black"></div>
 
@@ -145,13 +147,13 @@
         <section class="footer">
           <div class="footer__copyright">© 2019  Supersite</div>
           <nav class="nav footer__nav">
-            <a class="link nav__item footer__nav_item" href="./index.html">Главная</a>
-            <a class="link nav__item footer__nav_item" href="./about.html">О проекте</a>
-            <a class="link nav__item footer__nav_item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+            <a class="link nav__item footer__nav-item" href="./index.html">Главная</a>
+            <a class="link nav__item footer__nav-item" href="./about.html">О проекте</a>
+            <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
           </nav>
           <div class="footer__social">
-            <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social_icon" alt="Логотип GitHub"></a>
-            <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social_icon" alt="Логотип Facebook"></a>
+            <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub"></a>
+            <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social-icon" alt="Логотип Facebook"></a>
           </div>
         </section>
 

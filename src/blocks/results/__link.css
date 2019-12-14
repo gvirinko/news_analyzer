@@ -1,7 +1,18 @@
 
 .results__link {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-top: 94px;
   margin-right: 108px;
+
+  font-family: Roboto, Georgia, serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1A1B22;
+
 }
 
 @media (max-width: 320px) {

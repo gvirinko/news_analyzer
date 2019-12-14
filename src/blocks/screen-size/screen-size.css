@@ -1,5 +1,6 @@
+@import url(./__container.css);
 
-.screen_size__container {
+.screen-size {
   position: relative;
 
   -moz-osx-font-smoothing: grayscale;

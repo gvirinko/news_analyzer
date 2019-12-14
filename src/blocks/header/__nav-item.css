@@ -1,5 +1,5 @@
 
-.header__nav_item {
+.header__nav-item {
   display: flex;
   align-items: center;
 
@@ -12,28 +12,28 @@
 }
 
 @media (max-width: 320px) {
-  .header__nav_item {
+  .header__nav-item {
     font-size: 16px;
     margin-left: 11px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .header__nav_item {
+  .header__nav-item {
     font-size: 16px;
     margin-left: 11px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .header__nav_item {
+  .header__nav-item {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 @media (min-width: 1440px) {
-  .header__nav_item {
+  .header__nav-item {
     display: flex;
     align-items: center;
 

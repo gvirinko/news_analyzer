@@ -1,4 +1,4 @@
-.text__title {
+.about-project__title {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Roboto Slab', Georgia, serif;
@@ -8,28 +8,30 @@
 }
 
 @media (max-width: 320px) {
-  .text__title {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .text__title {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1440px) {
-  .text__title {
+  .about-project__title {
     font-size: 30px;
     line-height: 40px;
   }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .about-project__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .about-project__title {
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
 @media (min-width: 1440px) {
-  .text__title {
+  .about-project__title {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Roboto Slab', Georgia, serif;

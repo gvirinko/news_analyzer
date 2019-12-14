@@ -1,5 +1,8 @@
 @import url(./__avatar.css);
-@import url(./__container/__container.css);
+@import url(./__container.css);
+@import url(./__title.css);
+@import url(./__text.css);
+@import url(./__para.css);
 
 .author {
   position: relative;

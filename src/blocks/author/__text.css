@@ -1,5 +1,5 @@
 
-.text__body {
+.author__text {
   margin-top: 23px;
   margin-bottom: 94px;
   font-family: Roboto, Georgia, serif;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 320px) {
-  .text__body {
+  .author__text {
     margin-top: 16px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .text__body {
+  .author__text {
     margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 1440px) {
-  .text__body {
+  .author__text {
     margin-top: 23px;
     margin-bottom: 94px;
     font-family: Roboto, Georgia, serif;

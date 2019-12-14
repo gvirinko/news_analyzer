@@ -10,15 +10,15 @@
   <title>NewsAnalyzer</title>
 </head>
 <body>
-  <div class="screen_size__container">
-    <div class="screen_size">
+  <div class="screen-size">
+    <div class="screen-size__container">
 
       <section class="lead">
         <div class="header">
           <div class="header__title">NewsAnalyzer</div>
           <nav class="nav header__nav">
-            <a class="link nav__item nav__item_active header__nav_item header_color_white" href="index.html">Главная</a>
-            <a class="link nav__item header__nav_item" href="about.html">О проекте</a>
+            <a class="link nav__item nav__item_active header__nav-item header__nav-item_color_white" href="index.html">Главная</a>
+            <a class="link nav__item header__nav-item" href="about.html">О проекте</a>
           </nav>
         </div>
         <div class="search">
@@ -45,8 +45,8 @@
       </section> -->
 
       <section class="results">
-        <h2 class="text__title results__title">Результаты поиска</h2>
-        <a class="link text__link results__link" href="analytics.html">Посмотреть аналитику
+        <h2 class="results__title">Результаты поиска</h2>
+        <a class="link results__link" href="analytics.html">Посмотреть аналитику
           <img src="<%=require('./images/arrow.png').default%>" alt=""></a>
         <div class="result-card__container">
 
@@ -125,17 +125,19 @@
 
       <section class="author">
 
-          <!-- <picture>
-              <source srcset="<%=require('./images/image-03-big.png').default%>" media="(min-width: 768px)">
-              <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="moo">
-          </picture> -->
-        <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта">
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%=require('./images/image-03-big.png').default%>">
+            <source media="(max-width: 767px)" srcset="<%=require('./images/image-03.png').default%>">
+            <img src="<%=require('./images/image-03.png').default%>" alt="Фотография автора проекта" class="author__avatar">
+          </picture>
+
+        <!-- <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта"> -->
         <div class="author__container">
-          <h2 class="text__title author__title">Об авторе</h2>
-          <div class="text__body">
-            <p class="text__para author__para">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+          <h2 class="author__title">Об авторе</h2>
+          <div class="author__text">
+            <p class="author__para">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="text__para author__para">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+            <p class="author__para">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
                 и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон.
                 Так заказчики смогут с вами связаться.</p>
           </div>
@@ -145,13 +147,13 @@
       <section class="footer">
         <div class="footer__copyright">© 2019  Supersite</div>
         <nav class="nav footer__nav">
-          <a class="link nav__item footer__nav_item" href="./index.html">Главная</a>
-          <a class="link nav__item footer__nav_item" href="./about.html">О проекте</a>
-          <a class="link nav__item footer__nav_item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+          <a class="link nav__item footer__nav-item" href="./index.html">Главная</a>
+          <a class="link nav__item footer__nav-item" href="./about.html">О проекте</a>
+          <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
         </nav>
         <div class="footer__social">
-          <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social_icon" alt="Логотип GitHub"></a>
-          <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social_icon" alt="Логотип Facebook"></a>
+          <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub"></a>
+          <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social-icon" alt="Логотип Facebook"></a>
         </div>
       </section>
 

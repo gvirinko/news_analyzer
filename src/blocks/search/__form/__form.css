@@ -30,8 +30,8 @@
     height: 56px;
   }
 }
-
-@media (min-width: 320px) and (max-width: 768px) {
+/* ---------- 321 */
+@media (min-width: 321px) and (max-width: 768px) {
   .search__form {
     display: flex;
     flex-direction: column;

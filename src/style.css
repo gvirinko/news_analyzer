@@ -1,11 +1,10 @@
-@import url(../vendor/normalize.css);
+@import url(./vendor/normalize.css);
 
-@import url(./blocks/screen_size/screen_size.css);
+@import url(./blocks/screen-size/screen-size.css);
 @import url(./blocks/circle-preloader/circle-preloader.css);
 @import url(./blocks/no-results/no-results.css);
 
 @import url(./blocks/link/link.css);
-@import url(./blocks/text/text.css);
 
 @import url(./blocks/nav/nav.css);
 @import url(./blocks/header/header.css);
@@ -18,8 +17,9 @@
 @import url(./blocks/result-card/result-card.css);
 @import url(./blocks/author/author.css);
 
-@import url(./blocks/about_project/about_project.css);
+@import url(./blocks/about-project/about-project.css);
 @import url(./blocks/tech/tech.css);
+@import url(./blocks/tech-card/tech-card.css);
 @import url(./blocks/stats/stats.css);
 @import url(./blocks/graph/graph.css);
 

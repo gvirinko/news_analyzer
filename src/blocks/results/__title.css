@@ -1,8 +1,12 @@
-
 .results__title {
   margin-top: 80px;
   margin-bottom: 64px;
   margin-left: 104px;
+
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
 }
 
 @media (max-width: 320px) {
@@ -11,6 +15,9 @@
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
+
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -20,6 +27,9 @@
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
+
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -29,7 +39,9 @@
     margin-bottom: 32px;
     margin-left: 40px;
     margin-right: auto;
+
     line-height: 34px;
+    font-size: 30px;
   }
 }
 
@@ -38,5 +50,10 @@
     margin-top: 80px;
     margin-bottom: 64px;
     margin-left: 104px;
+
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
   }
 }

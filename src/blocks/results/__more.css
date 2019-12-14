@@ -9,6 +9,7 @@
   background: #fff;
   border-radius: 80px;
   align-content: center;
+  border-width: 0;
 
   font-family: Roboto, Georgia, serif;
   font-weight: 500;
@@ -17,6 +18,11 @@
 
   color: #1A1B22;
   cursor: pointer;
+}
+
+.results__more::hover {
+  background: #fff;
+  opacity: 0.9;
 }
 
 @media (max-width: 320px) {
@@ -55,6 +61,7 @@
     background: #fff;
     border-radius: 80px;
     align-content: center;
+
 
     font-family: Roboto, Georgia, serif;
     font-weight: 500;

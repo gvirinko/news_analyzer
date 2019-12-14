@@ -1,25 +1,18 @@
 
-.stats__text {
-  margin-top: 24px;
-  margin-bottom: 4px;
+.about-project__text {
+  margin-top: 23px;
+  margin-bottom: 94px;
   font-family: Roboto, Georgia, serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
-.stats__text:last-of-type {
-  margin-top: 4px;
-  margin-bottom: 80px;
-}
 
 @media (max-width: 320px) {
-  .stats__text {
+  .about-project__text {
     margin-top: 16px;
     margin-bottom: 0;
     padding-bottom: 0;
-  }
-  .stats__text:last-of-type {
-    margin-bottom: 24px;
   }
 }
 
@@ -28,27 +21,20 @@
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .stats__text {
-    margin-top: 24px;
+  .about-project__text {
+    margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
-  }
-  .stats__text:last-of-type {
-    margin-bottom: 40px;
   }
 }
 
 @media (min-width: 1440px) {
-  .stats__text {
-    margin-top: 24px;
-    margin-bottom: 4px;
+  .about-project__text {
+    margin-top: 23px;
+    margin-bottom: 94px;
     font-family: Roboto, Georgia, serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-  }
-  .stats__text:last-of-type {
-    margin-top: 4px;
-    margin-bottom: 80px;
   }
 }
