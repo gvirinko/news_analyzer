@@ -1,6 +1,6 @@
-@import url(./__title.css);
-@import url(./__text.css);
-@import url(./__para.css);
+@import url(./__title/about-project__title.css);
+@import url(./__text/about-project__text.css);
+@import url(./__para/about-project__para.css);
 
 .about-project {
   width: 815px;

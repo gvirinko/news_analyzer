@@ -1,10 +1,10 @@
-@import url(./__page-address.css);
-@import url(./__page-address_inactive.css);
-@import url(./__title.css);
-@import url(./__keyword.css);
-@import url(./__text.css);
-@import url(./__number.css);
-@import url(./__mentions.css);
+@import url(./__page-address/stats__page-address.css);
+@import url(./__page-address_inactive/stats__page-address_inactive.css);
+@import url(./__title/stats__title.css);
+@import url(./__keyword/stats__keyword.css);
+@import url(./__text/stats__text.css);
+@import url(./__number/stats__number.css);
+@import url(./__mentions/stats__mentions.css);
 
 .stats {
   position: relative;

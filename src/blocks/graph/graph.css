@@ -1,7 +1,12 @@
-@import url(./__title.css);
-@import url(./__heading/__heading.css);
-@import url(./__scale.css);
-@import url(./__body/__body.css);
+@import url(./__bar/graph__bar.css);
+@import url(./__body/graph__body.css);
+@import url(./__date/graph__date.css);
+@import url(./__heading/graph__heading.css);
+@import url(./__heading_date/graph__heading_date.css);
+@import url(./__heading_number/graph__heading_number.css);
+@import url(./__row/graph__row.css);
+@import url(./__scale/graph__scale.css);
+@import url(./__title/graph__title.css);
 
 .graph {
   position: relative;

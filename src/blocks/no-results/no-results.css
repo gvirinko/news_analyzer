@@ -1,6 +1,6 @@
-@import url(./__emoji.css);
-@import url(./__message.css);
-@import url(./__clarification.css);
+@import url(./__emoji/no-results__emoji.css);
+@import url(./__message/no-results__message.css);
+@import url(./__clarification/no-results__clarification.css);
 
 .no-results {
   position: relative;

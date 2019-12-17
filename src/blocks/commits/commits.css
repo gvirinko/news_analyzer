@@ -1,5 +1,5 @@
-@import url(./__title.css);
-@import url(./__github.css);
+@import url(./__title/commits__title.css);
+@import url(./__github/commits__github.css);
 
 .commits {
   position: relative;

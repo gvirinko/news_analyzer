@@ -1,4 +1,49 @@
 import "./style.css";
+// import {Api} from "./Api.js";
+// import {ResultCard} from "./ResultCard.js"
+
+// const searchButton = document.querySelector('.search__button');
+// searchButton.addEventListener('click', function(event) {
+// });
+
+
+// function createApiObject () {
+//   let apiKey = "a9927459bf884f1395b3cf33e659b1c1";
+//   let newApiObject = new Api(apiKey, "макароны", "2019-12-05", "2019-12-12");
+//   newApiObject.createUrl();
+//   newApiObject.loadResultData();
+//   // console.log(newApiObject);
+// }
+
+// createApiObject();
+
+// let now = new Date().toLocaleString('ru', {
+//   year: 'numeric',
+//   month: 'long',
+//   day: 'numeric'
+// });
+// console.log(now);
+
+// console.log(now.slice( -3));
+
+
+// for (let i = 0; i < now.length; i++) {
+//   // console.log(now[i]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------
 
 import "../node_modules/swiper/js/swiper.js";
 import "./swiper.js";

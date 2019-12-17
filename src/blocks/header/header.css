@@ -1,8 +1,8 @@
-@import url(./__title.css);
-@import url(./__nav.css);
-@import url(./__nav-item.css);
-@import url(./__nav-item_color_white.css);
-@import url(./__nav-item_color_dark.css);
+@import url(./__title/header__title.css);
+@import url(./__nav/header__nav.css);
+@import url(./__nav-item/header__nav-item.css);
+@import url(./__nav-item_color/header__nav-item_color_dark.css);
+@import url(./__nav-item_color/header__nav-item_color_white.css);
 
 .header {
   position: relative;

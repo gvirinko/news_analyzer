@@ -1,7 +1,6 @@
-
-@import url(./__title.css);
-@import url(./__link.css);
-@import url(./__more.css);
+@import url(./__title/results__title.css);
+@import url(./__link/results__link.css);
+@import url(./__more/results__more.css);
 
 .results {
   position: relative;

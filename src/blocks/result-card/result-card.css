@@ -1,6 +1,10 @@
-@import url(./__container.css);
-@import url(./__image.css);
-@import url(./__description/__description.css);
+@import url(./__container/result-card__container.css);
+@import url(./__image/result-card__image.css);
+@import url(./__description/result-card__description.css);
+@import url(./__date/result-card__date.css);
+@import url(./__title/result-card__title.css);
+@import url(./__text/__text.css);
+@import url(./__source/result-card__source.css);
 
 .result-card {
   position: relative;

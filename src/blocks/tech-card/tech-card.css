@@ -1,5 +1,5 @@
-@import url(./__name.css);
-@import url(./__wrapper.css);
+@import url(./__name/tech-card__name.css);
+@import url(./__wrapper/tech-card__wrapper.css);
 
 .tech-card {
   width: 120px;

@@ -1,9 +1,9 @@
-@import url(./__date.css);
-@import url(./__author.css);
-@import url(./__avatar.css);
-@import url(./__name.css);
-@import url(./__email.css);
-@import url(./__text.css);
+@import url(./__date/commit-card__date.css);
+@import url(./__author/commit-card__author.css);
+@import url(./__avatar/commit-card__avatar.css);
+@import url(./__name/commit-card__name.css);
+@import url(./__email/commit-card__email.css);
+@import url(./__text/commit-card__text.css);
 
 .commit-card {
   width: 400px;

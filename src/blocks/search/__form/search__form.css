@@ -1,5 +1,3 @@
-@import url(./__input/__input.css);
-@import url(./__button/__button.css);
 
 .search__form {
   position: relative;
@@ -16,10 +14,6 @@
   backdrop-filter: blur(8px);
   border-radius: 100px;
 }
-
-/* .search__form:hover {
-
-} */
 
 @media (max-width: 320px) {
   .search__form {
