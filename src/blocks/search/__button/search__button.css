@@ -16,8 +16,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+
 }
 
+.search__button:disabled {
+  /* border: 1px solid rgba(0, 0, 0, .2); */
+  /* color: lightgrey; */
+  background-color: red;
+  cursor: auto;
+}
 
 .search__button:active {
   cursor: pointer;

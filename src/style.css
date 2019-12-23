@@ -28,10 +28,10 @@
 @import url(./blocks/commits/commits.css);
 @import url(./blocks/commit-card/commit-card.css);
 
-/* *  {
+*  {
   box-sizing: border-box;
   border: 1px solid red;
-  } */
+  }
 
 @font-face {
     src: url(./fonts/roboto-regular-webfont.woff) format('woff');
