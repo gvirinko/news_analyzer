@@ -1,0 +1,31 @@
+.author__para {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 320px) {
+  .author__para {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .author__para {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .author__para {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .author__para {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
+

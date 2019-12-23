@@ -1,0 +1,23 @@
+
+.nav__item {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+
+  text-align: center;
+
+  font-family: Roboto, Georgia, serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav__item_active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.nav__item:first-of-type {
+  margin-left: 0;
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Этот сайт является сервисом для анализа происходящих в мире событий">
+  <meta name="author" content="Ирина Гнатив">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="../src/images/favicon.ico">
+  <title>NewsAnalyzer</title>
+</head>
+<body>
+  <div class="screen-size">
+    <div class="screen-size__container">
+
+      <section class="lead">
+        <div class="header">
+          <div class="header__title">NewsAnalyzer</div>
+          <nav class="nav header__nav">
+            <a class="link nav__item nav__item_active header__nav-item header__nav-item_color_white" href="index.html">Главная</a>
+            <a class="link nav__item header__nav-item" href="about.html">О проекте</a>
+          </nav>
+        </div>
+        <div class="search">
+          <h1 class="search__title">Что в мире творится?</h1>
+          <h3 class="search__subtitle">Введите в поиске любую тему и узнайте,
+            насколько популярной она была в новостях за прошедшую неделю.</h3>
+          <form class="search__form" name="form_search">
+              <input type="text" name="input_search" required minlength="2" maxlength="30" class="search__input" placeholder="Введите тему новости" autofocus>
+              <!-- <p class="validation validation-error__name">No error</p> -->
+              <button class="search__button">Искать</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- <section class="preloader">
+          <i class="circle-preloader"></i>
+          <div class="preloader__message">Идет поиск новостей...</div>
+      </section> -->
+
+       <!-- <section class="no-results">
+        <img class="no-results__emoji" src="<%=require('./images/not-found_v1.png').default%>" alt="Печальный emoji">
+        <h2 class="no-results__message">Ничего не найдено</h2>
+        <h3 class="no-results__clarification">К сожалению, по вашему запросу ничего не найдено.</h3>
+      </section> -->
+
+      <section class="results">
+        <h2 class="results__title">Результаты поиска</h2>
+        <a class="link results__link" href="analytics.html">Посмотреть аналитику
+          <img src="<%=require('./images/arrow.png').default%>" alt=""></a>
+        <div class="result-card__container">
+
+          <div class="result-card">
+            <img class="result-card__image" src="<%=require('./images/cards/image_08.png').default%>" alt="Фото травы 1">
+            <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Национальное достояние – парки</h4>
+              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <a class="link result-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
+            </div>
+          </div>
+
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_04.png').default%>" alt="Фото травы 2">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+              <a class="link result-card__source" href="https://meduza.io/" target="_blank">Медуза</a>
+            </div>
+          </div>
+
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_07.png').default%>" alt="Фото травы 3">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+                о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <a class="link result-card__source" href="https://ria.ru/" target="_blank">РИА</a>
+            </div>
+          </div>
+
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_06.png').default%>" alt="Фото травы 4">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Национальное достояние – парки</h4>
+              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <a class="link result-card__source" href="https://zen.yandex.ru/" target="_blank">Дзен</a>
+            </div>
+          </div>
+
+          <!-- <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_01.png').default%>" alt="Фото травы 5">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+              <a class="link result-card__source" href="https://www.afisha.ru/" target="_blank">Афиша</a>
+            </div>
+          </div>
+
+          <div class="result-card">
+              <img class="result-card__image" src="<%=require('./images/cards/image_05.png').default%>" alt="Фото травы 6">
+              <div class="result-card__description">
+              <p class="result-card__date">2 августа, 2019</p>
+              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+                о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <a class="link result-card__source" href="https://zona.media/" target="_blank">Медиазона</a>
+            </div>
+          </div> -->
+
+        </div>
+
+        <button class="link results__more">Показать еще</button>
+
+
+      </section>
+
+      <section class="author">
+
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%=require('./images/image-03-big.png').default%>">
+            <source media="(max-width: 767px)" srcset="<%=require('./images/image-03.png').default%>">
+            <img src="<%=require('./images/image-03.png').default%>" alt="Фотография автора проекта" class="author__avatar">
+          </picture>
+
+        <!-- <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта"> -->
+        <div class="author__container">
+          <h2 class="author__title">Об авторе</h2>
+          <div class="author__text">
+            <p class="author__para">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+              чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="author__para">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+              и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон.
+              Так заказчики смогут с вами связаться.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer__copyright">© 2019  Supersite</div>
+        <nav class="nav footer__nav">
+          <a class="link nav__item footer__nav-item" href="./index.html">Главная</a>
+          <a class="link nav__item footer__nav-item" href="./about.html">О проекте</a>
+          <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+        </nav>
+        <div class="footer__social">
+          <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub"></a>
+          <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social-icon" alt="Логотип Facebook"></a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</body>
+</html>

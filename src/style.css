@@ -1,0 +1,59 @@
+@import url(./vendor/normalize.css);
+
+@import url(./blocks/screen-size/screen-size.css);
+@import url(./blocks/circle-preloader/circle-preloader.css);
+@import url(./blocks/no-results/no-results.css);
+
+@import url(./blocks/link/link.css);
+
+@import url(./blocks/nav/nav.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/footer/footer.css);
+
+
+@import url(./blocks/lead/lead.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/results/results.css);
+@import url(./blocks/result-card/result-card.css);
+@import url(./blocks/author/author.css);
+
+@import url(./blocks/about-project/about-project.css);
+@import url(./blocks/tech/tech.css);
+@import url(./blocks/tech-card/tech-card.css);
+@import url(./blocks/stats/stats.css);
+@import url(./blocks/graph/graph.css);
+
+@import url(../node_modules/swiper/css/swiper.css);
+@import url(./blocks/swiper-custom-settings/swiper-custom-settings.css);
+@import url(./blocks/commits/commits.css);
+@import url(./blocks/commit-card/commit-card.css);
+
+/* *  {
+  box-sizing: border-box;
+  border: 1px solid red;
+  } */
+
+@font-face {
+    src: url(./fonts/roboto-regular-webfont.woff) format('woff');
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+
+@font-face {
+  src: url(./fonts/robotoslab-regular-webfont.woff) format('woff');
+  font-family: 'Roboto Slab';
+  font-style: normal;
+}
+
+@font-face {
+  src: url(./fonts/roboto-medium-webfont.woff) format('woff');
+  font-family: 'Roboto Medium';
+  font-style: normal;
+}
+
+@font-face {
+  src: url(./fonts/source-sans-pro-v13-latin_cyrillic-regular.woff) format('woff');
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+}
+

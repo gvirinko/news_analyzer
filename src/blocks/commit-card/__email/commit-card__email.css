@@ -1,0 +1,28 @@
+.commit-card__email {
+  margin-top: 2px;
+
+  font-family: Roboto, Georgia, serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .commit-card__email {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+}

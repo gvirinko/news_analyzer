@@ -1,0 +1,74 @@
+@import url(./__container/result-card__container.css);
+@import url(./__image/result-card__image.css);
+@import url(./__description/result-card__description.css);
+@import url(./__date/result-card__date.css);
+@import url(./__title/result-card__title.css);
+@import url(./__text/__text.css);
+@import url(./__source/result-card__source.css);
+
+.result-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  max-height: 576px;
+  margin-bottom: 16px;
+
+  background-color: #fff;
+  border-radius: 16px;
+  color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+  .result-card {
+    max-height: 446.13px;
+    width: 288px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .result-card:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .result-card {
+    max-height: 446.13px;
+    max-width: 288px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .result-card:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .result-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 224px;
+    max-height: 420px;
+    margin-bottom: 22px;
+
+    background-color: #fff;
+    border-radius: 16px;
+    color: #1A1B22;
+  }
+}
+
+@media (min-width: 1440px) {
+  .result-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 576px;
+    margin-bottom: 16px;
+
+    background-color: #fff;;
+    border-radius: 16px;
+    color: #1A1B22;
+  }
+}

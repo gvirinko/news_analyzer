@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Этот сайт является сервисом для анализа происходящих в мире событий">
+  <meta name="author" content="Ирина Гнатив">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" href="../src/images/favicon.ico">
+
+  <title>NewsAnalyzer</title>
+</head>
+<body>
+  <div class="screen-size">
+    <div class="screen-size__container">
+
+      <section class="header">
+        <div class="header__title">NewsAnalyzer</div>
+        <nav class="nav header__nav">
+          <a class="link nav__item header__nav-item" href="index.html">Главная</a>
+          <a class="link nav__item header__nav-item" href="about.html">О проекте</a>
+        </nav>
+      </section>
+
+      <section class="stats">
+        <h4 class="stats__page-address">Главная <span class="stats__page-address stats__page-address_inactive">/ Аналитика</span></h4>
+        <h1 class="stats__title">Вы спросили: «<span class="stats__keyword">Путешествия</span>»</h1>
+        <p class="stats__text">Новостей за неделю: <span class="stats__number">34 324</span></p>
+        <p class="stats__text">Упоминаний в заголовках: <span class="stats__mentions">235</span></p>
+      </section>
+
+      <section class="graph">
+        <h2 class="graph__title">Аналитика по дням</h2>
+        <div class="graph__heading">
+          <div class="graph__heading_date" >Дата <br>(<span>август</span>)</div>
+          <div class="graph__heading_number">Кол-во упоминаний</div>
+        </div>
+
+        <div class="graph__scale">
+          <div class="graph__scale-0">0</div>
+          <div class="graph__scale-25">25</div>
+          <div class="graph__scale-50">50</div>
+          <div class="graph__scale-75">75</div>
+          <div class="graph__scale-100">100</div>
+        </div>
+
+        <div class="graph__body">
+          <div class="graph__row">
+            <div class="graph__date">19, пн</div>
+            <div class="graph__bar graph__bar_15">15</div>
+          </div>
+          <div class="graph__row">
+              <div class="graph__date">20, вт</div>
+              <div class="graph__bar graph__bar_18">18</div>
+            </div>
+            <div class="graph__row">
+                <div class="graph__date">21, ср</div>
+                <div class="graph__bar graph__bar_11">11</div>
+            </div>
+            <div class="graph__row">
+                <div class="graph__date">22, чт</div>
+                <div class="graph__bar graph__bar_39">39</div>
+            </div>
+            <div class="graph__row">
+                <div class="graph__date">23, пт</div>
+                <div class="graph__bar graph__bar_45">45</div>
+            </div>
+            <div class="graph__row">
+                <div class="graph__date">24, сб</div>
+                <div class="graph__bar graph__bar_73">73</div>
+            </div>
+            <div class="graph__row">
+                <div class="graph__date">25, вс</div>
+                <div class="graph__bar graph__bar_34">34</div>
+            </div>
+        </div>
+
+        <div class="graph__scale">
+          <div class="graph__scale-0">0</div>
+          <div class="graph__scale-25">25</div>
+          <div class="graph__scale-50">50</div>
+          <div class="graph__scale-75">75</div>
+          <div class="graph__scale-100">100</div>
+        </div>
+      </section>
+
+      <section class="footer">
+          <div class="footer__copyright">© 2019  Supersite</div>
+          <nav class="nav footer__nav">
+            <a class="link nav__item footer__nav-item" href="./index.html">Главная</a>
+            <a class="link nav__item footer__nav-item" href="./about.html">О проекте</a>
+            <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+          </nav>
+          <div class="footer__social">
+            <a class="link" href="https://github.com/" target="_blank">
+              <img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub">
+            </a>
+            <a class="link" href="https://www.facebook.com/" target="_blank">
+              <img src="../src/images/fb.png" class="footer__social-icon" alt="Логотип Facebook">
+            </a>
+          </div>
+        </section>
+
+    </div>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</body>
+</html>

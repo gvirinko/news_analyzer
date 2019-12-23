@@ -1,0 +1,11 @@
+
+.tech-card__name {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-family: Roboto, Georgia, serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,45 @@
+.stats__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+@media (max-width: 320px) {
+  .stats__title {
+    margin-top: 16px;
+
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .stats__title {
+    margin-top: 16px;
+
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .stats__title {
+    margin-top: 64px;
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stats__title {
+    margin-top: 64px;
+    margin-bottom: 0;
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+  }
+}

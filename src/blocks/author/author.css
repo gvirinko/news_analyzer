@@ -1,0 +1,44 @@
+@import url(./__avatar/author__avatar.css);
+@import url(./__container/author__container.css);
+@import url(./__title/author__title.css);
+@import url(./__text/author__text.css);
+@import url(./__para/author__para.css);
+
+.author {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 320px) {
+  .author {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .author {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .author {
+    flex-direction: row;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .author {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}

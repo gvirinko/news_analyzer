@@ -1,0 +1,48 @@
+.commit-card__name {
+  margin-top: 4px;
+  margin-bottom: 2px;
+
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+  .commit-card__name {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .commit-card__name {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .commit-card__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .commit-card__name {
+    margin-top: 4px;
+    margin-bottom: 2px;
+
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    color: #1A1B22;
+  }
+
+}

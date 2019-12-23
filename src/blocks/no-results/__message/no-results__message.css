@@ -1,0 +1,13 @@
+
+.no-results__message {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+}
