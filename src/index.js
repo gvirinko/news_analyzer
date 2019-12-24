@@ -34,8 +34,15 @@ function saveDataFromApi (searchWord) {
   let dateTo = new Date(now);
   let dateFrom = new Date(minusWeek);
 
+  let cardListObj = new CardList();
+  localStorage.removeItem(searchWord);
+  // NB: we must clear the DOM object here, since we want to reset it even if
+  // the upcoming API request returns an error; in that case, the user will see
+  // an empty list of cards.
+  cardListObj.deleteCards();
+
   let apiObj = new Api(apiKey, searchWord, dateFrom, dateTo);
-  apiObj.storeData();
+  apiObj.storeData(cardListObj);
 }
 
 function getDataFromStorage(searchWord) {
@@ -47,8 +54,7 @@ export function createResultCards(searchWord) {
   let result = getDataFromStorage(searchWord);
   let cardsArray = [];
   for (let i = 0; i < result.totalResults; i++) {
-    // let urlToImage = result.articles[i].urlToImage;
-    let urlToImage = "./images/image-03.png";
+    let urlToImage = result.articles[i].urlToImage;
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
     let text = result.articles[i].description;

@@ -32,7 +32,7 @@ export class Api {
     })
   }
 
-  storeData() {
+  storeData(cardListObj) {
     let cardUrl = this.createUrl();
       this.httpGet(cardUrl)
       .then(result => {
@@ -43,8 +43,7 @@ export class Api {
         return createResultCards(searchWord);
       })
       .then(cardsArray => {
-        let cardListObj = new CardList(cardsArray);
-        cardListObj.renderCards();
+        cardListObj.renderCards(cardsArray);
       })
       .catch(error=>{console.log(error);
       })

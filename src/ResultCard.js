@@ -7,7 +7,6 @@ export class ResultCard {
     this.title = title;
     this.text = text;
     this.source = source;
-    this.isRendered = false;
   }
 
   create() {
@@ -40,7 +39,7 @@ export class ResultCard {
     // resultImage.src = "./images/image-03.png";
     // resultImage.src= "<%=require('./images/cards/image_08.png').default%>"
     // resultImage.src = "https://cdn.jpg.wtf/futurico/dd/3b/1575628928-dd3bda53a8134296beaaea379eaf2818.jpeg";
-    // resultImage.src = "\"" + this.urlToImage + "\"";
+    resultImage.src = this.urlToImage;
 
     resultDate.textContent = this.changeDateFormat(this.publishedAt);
     resultTitle.textContent = this.title;
@@ -48,14 +47,6 @@ export class ResultCard {
     resultSource.textContent = this.source;
     return resultCard;
   }
-
-  render() {
-    if (this.isRendered === false) {
-        this.isRendered = true;
-        return false;
-    }
-    return true;
-}
 
   changeDateFormat(date) {
     let toLocaleStringDate = new Date(date).toLocaleString('ru', {
