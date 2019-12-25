@@ -1,30 +1,23 @@
 import "./style.css";
+import './about.js';
+import './analytics.js';
 import {NewsApi} from "./NewsApi.js";
-import {ResultCard} from "./ResultCard.js";
+import {NewsCard} from "./NewsCard.js";
 import {CardList} from "./CardList.js";
-import {CommitApi} from "./CommitApi.js";
 
 const searchButton = document.querySelector('.search__button');
 const moreButton = document.querySelector('.results__more');
 const preloaderBlock = document.querySelector('.preloader');
-// searchButton.disabled = true;
 const searchValidation = document.querySelector('.search__validation');
 const resultsBlock = document.querySelector('.results');
 const searchForm = document.forms.form_search;
 const resultsMore = document.querySelector('.results__more');
 
-
 let _cards = new CardList();
-
-
-// const noResults = document.querySelector('.no-results');
-
 
 if (searchButton) {
   searchButton.addEventListener('click', onSearchClick);
   resultsMore.addEventListener('click', _cards.onMoreCardsClick.bind(_cards));
-
-  // searchForm.addEventListener('input', validate);
 }
 
 
@@ -72,42 +65,30 @@ export function createResultCards(searchWord) {
   for (let i = 0; i < result.totalResults; i++) {
     let urlToImage = result.articles[i].urlToImage;
       if (!urlToImage) {
-        urlToImage = "./images/nophoto.jpeg";
+        urlToImage = "./images/nophoto.png";
       }
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
     let text = result.articles[i].description;
     let source = result.articles[i].source.name;
 
-    let resultCardObject = new ResultCard(urlToImage, publishedAt, title, text, source);
+    let resultCardObject = new NewsCard(urlToImage, publishedAt, title, text, source);
     let singleCard = resultCardObject.create();
     cardsArray.push(singleCard);
   }
   return cardsArray;
 }
 
-
-// Analytics
-
-let keyWord = document.querySelector('.stats__keyword');
-
-if (keyWord) {
-  keyWord.textContent = "moo";
-}
-
-// About
-
-let commitsTitle = document.querySelector('.commits__title');
-
-  function requestCommits() {
-    let commitsApiObj = new CommitApi();
-    let commitsList = commitsApiObj.getData();
-    // console.log("list of commits: " + commitsList);
-  }
-
-if (commitsTitle) {
-  commitsTitle.addEventListener('click', requestCommits);
-  // requestCommits();
+export function changeDateFormat(date) {
+  let toLocaleStringDate = new Date(date).toLocaleString('ru', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+  let year = toLocaleStringDate.slice(0, -3).slice(-4);
+  let dayAndMonth = toLocaleStringDate.slice(0, -3).slice(0, -5);
+  let formattedDate = dayAndMonth + ', ' + year;
+  return formattedDate;
 }
 
 

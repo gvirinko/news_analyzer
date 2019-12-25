@@ -1,17 +1,15 @@
+import {changeDateFormat} from './index.js';
 
 export class CommitCard {
   constructor(name, email, date, message, avatar) {
-    // this.container = this.create();
     this.name = name;
     this.email = email;
     this.date = date;
     this.message = message;
     this.avatar = avatar;
-    // this.create();
   }
 
   create() {
-    // console.log(this);
     const commitCard = document.createElement('a');
     const commitDate = document.createElement('p');
     const commitAuthor = document.createElement('div');
@@ -43,22 +41,9 @@ export class CommitCard {
 
     commitName.textContent = this.name;
     commitEmail.textContent = this.email;
-    commitDate.textContent = this.date;
+    commitDate.textContent = changeDateFormat(this.date);
     commitText.textContent = this.message;
     commitAvatar.src = this.avatar;
-    // console.log(commitCard);
     return commitCard;
   }
-
-  // changeDateFormat(date) {
-  //   let toLocaleStringDate = new Date(date).toLocaleString('ru', {
-  //     year: 'numeric',
-  //     month: 'long',
-  //     day: 'numeric'
-  //   });
-  //   let year = toLocaleStringDate.slice(0, -3).slice(-4);
-  //   let dayAndMonth = toLocaleStringDate.slice(0, -3).slice(0, -5);
-  //   let formattedDate = dayAndMonth + ', ' + year;
-  //   return formattedDate;
-  // }
 }
