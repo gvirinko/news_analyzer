@@ -3,10 +3,15 @@
   margin: 0;
   height: 282px;
 	/* min-height: 100vh; */
-	/* background-color: #333; */
+  /* background-color: #333; */
+  display: none;
 
 background: #F5F6F7;
 	overflow: hidden;
+}
+
+.preloader_active {
+  display: block;
 }
 
 .preloader__message {

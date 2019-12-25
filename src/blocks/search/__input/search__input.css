@@ -8,12 +8,16 @@
   font-size: 16px;
   line-height: 22px;
   color: #1a1b22;
+  backdrop-filter: blur(100px);
+  /* border-radius: 100px; */
+
   border: none;
 }
 
 .search__input:focus {
-  /* border: none; */
+  border: none;
   outline: none;
+  /* outline: 1px solid blue; */
 }
 
 .search__input::placeholder {

@@ -1,22 +1,35 @@
 import "./style.css";
-import {Api} from "./Api.js";
+import {NewsApi} from "./NewsApi.js";
 import {ResultCard} from "./ResultCard.js";
 import {CardList} from "./CardList.js";
+import {CommitsApi} from "./CommitsApi.js";
 
 const searchButton = document.querySelector('.search__button');
+const moreButton = document.querySelector('.results__more');
+const preloaderBlock = document.querySelector('.preloader');
 // searchButton.disabled = true;
-// const searchForm = document.forms.form_search;
 const searchValidation = document.querySelector('.search__validation');
+const resultsBlock = document.querySelector('.results');
+const searchForm = document.forms.form_search;
+const resultsMore = document.querySelector('.results__more');
+
+
+let _cards = new CardList();
+
+
+// const noResults = document.querySelector('.no-results');
+
 
 if (searchButton) {
-  searchButton.addEventListener('click', validate);
-  searchButton.addEventListener('click', saveDataFromApi);
+  searchButton.addEventListener('click', onSearchClick);
+  resultsMore.addEventListener('click', _cards.onMoreCardsClick.bind(_cards));
+
+  // searchForm.addEventListener('input', validate);
 }
 
 
-function validate(event) {
+function onSearchClick(event) {
   event.preventDefault();
-  // searchButton.disabled = true;
   let searchWord = document.querySelector('.search__input').value;
   if (searchWord.length === 0) {
     searchValidation.classList.add('search__validation_error');
@@ -34,15 +47,18 @@ function saveDataFromApi (searchWord) {
   let dateTo = new Date(now);
   let dateFrom = new Date(minusWeek);
 
-  let cardListObj = new CardList();
+  resultsBlock.classList.add('results__active');
+  preloaderBlock.classList.add('preloader_active');
+
+
   localStorage.removeItem(searchWord);
   // NB: we must clear the DOM object here, since we want to reset it even if
   // the upcoming API request returns an error; in that case, the user will see
   // an empty list of cards.
-  cardListObj.deleteCards();
+  _cards.deleteCards();
 
-  let apiObj = new Api(apiKey, searchWord, dateFrom, dateTo);
-  apiObj.storeData(cardListObj);
+  let apiObj = new NewsApi(apiKey, searchWord, dateFrom, dateTo);
+  apiObj.storeData(_cards);
 }
 
 function getDataFromStorage(searchWord) {
@@ -55,6 +71,9 @@ export function createResultCards(searchWord) {
   let cardsArray = [];
   for (let i = 0; i < result.totalResults; i++) {
     let urlToImage = result.articles[i].urlToImage;
+      if (!urlToImage) {
+        urlToImage = "./images/nophoto.jpeg";
+      }
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
     let text = result.articles[i].description;
@@ -67,10 +86,6 @@ export function createResultCards(searchWord) {
   return cardsArray;
 }
 
-// export function renderCards(cardsArray) {
-// let cardList = new CardList(cardsArray);
-//   cardList.renderCards();
-// }
 
 // Analytics
 
@@ -79,6 +94,22 @@ let keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
   keyWord.textContent = "moo";
 }
+
+// About
+
+let commitsTitle = document.querySelector('.commits__title');
+
+  function requestCommits() {
+    let commitsApiObj = new CommitsApi();
+    let commitsList = commitsApiObj.getData();
+  }
+
+if (commitsTitle) {
+  commitsTitle.addEventListener('click', requestCommits);
+  // requestCommits();
+}
+
+
 
 
 

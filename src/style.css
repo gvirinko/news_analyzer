@@ -1,7 +1,7 @@
 @import url(./vendor/normalize.css);
 
 @import url(./blocks/screen-size/screen-size.css);
-@import url(./blocks/circle-preloader/circle-preloader.css);
+@import url(./blocks/preloader/preloader.css);
 @import url(./blocks/no-results/no-results.css);
 
 @import url(./blocks/link/link.css);

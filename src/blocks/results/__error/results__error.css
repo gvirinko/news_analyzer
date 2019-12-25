@@ -1,0 +1,9 @@
+
+.results__error {
+    background-color: greenyellow;
+    display: none;
+}
+
+.results__error_active {
+    display: block;
+}

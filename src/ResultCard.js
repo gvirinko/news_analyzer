@@ -35,10 +35,6 @@ export class ResultCard {
     resultCard.appendChild(resultImage);
     resultCard.appendChild(resultDescription);
 
-    // console.log(this.urlToImage);
-    // resultImage.src = "./images/image-03.png";
-    // resultImage.src= "<%=require('./images/cards/image_08.png').default%>"
-    // resultImage.src = "https://cdn.jpg.wtf/futurico/dd/3b/1575628928-dd3bda53a8134296beaaea379eaf2818.jpeg";
     resultImage.src = this.urlToImage;
 
     resultDate.textContent = this.changeDateFormat(this.publishedAt);

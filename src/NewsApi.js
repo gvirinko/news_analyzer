@@ -3,7 +3,13 @@ import {CardList} from "./CardList.js";
 import {createResultCards} from "./index.js"
 import {renderCards} from "./index.js";
 
-export class Api {
+const preloaderBlock = document.querySelector('.preloader');
+const resultsBlock = document.querySelector('.results');
+const searchValidation = document.querySelector('.search__validation');
+
+
+
+export class NewsApi {
   constructor(apiKey, searchWord, dateFrom, dateTo) {
     this.apiKey = apiKey;
     this.searchWord = searchWord;
@@ -28,6 +34,7 @@ export class Api {
         if (result.ok) {
             return result.json();
         }
+        // throw new Error('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз');
         return Promise.reject(`Ошибка: ${result.status}`);
     })
   }
@@ -43,9 +50,15 @@ export class Api {
         return createResultCards(searchWord);
       })
       .then(cardsArray => {
-        cardListObj.renderCards(cardsArray);
+        cardListObj.populateCards(cardsArray);
+        preloaderBlock.classList.remove('preloader_active');
+        cardListObj.renderCards();
       })
-      .catch(error=>{console.log(error);
+      .catch(error=>{
+        preloaderBlock.classList.remove('preloader_active');
+        console.log(error);
+        // searchValidation.classList.add('search__validation_error');
+        // searchValidation.textContent = error;
       })
   }
 }

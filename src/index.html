@@ -35,24 +35,28 @@
         </div>
       </section>
 
-      <!-- <section class="preloader">
+      <section class="preloader">
           <i class="circle-preloader"></i>
           <div class="preloader__message">Идет поиск новостей...</div>
-      </section> -->
+      </section>
 
-       <!-- <section class="no-results">
+       <section class="no-results">
         <img class="no-results__emoji" src="<%=require('./images/not-found_v1.png').default%>" alt="Печальный emoji">
         <h2 class="no-results__message">Ничего не найдено</h2>
         <h3 class="no-results__clarification">К сожалению, по вашему запросу ничего не найдено.</h3>
-      </section> -->
+      </section>
 
       <section class="results">
-        <h2 class="results__title">Результаты поиска</h2>
+        <h2 class="results__title">Результаты поиска:</h2>
         <a class="link results__link" href="analytics.html">Посмотреть аналитику
-          <img src="<%=require('./images/arrow.png').default%>" alt=""></a>
+          <img src="<%=require('./images/arrow.png').default%>" alt="">
+        </a>
+        <p class = "results__error">Во время запроса произошла ошибка.
+          Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.
+        </p>
         <div class="result-card__container">
 
-          <div class="result-card">
+          <!-- <div class="result-card">
             <img class="result-card__image" src="<%=require('./images/cards/image_08.png').default%>" alt="Фото травы 1">
             <div class="result-card__description">
               <p class="result-card__date">2 августа, 2019</p>
@@ -62,7 +66,7 @@
               <a class="link result-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
             </div>
           </div>
-<!--
+
           <div class="result-card">
               <img class="result-card__image" src="<%=require('./images/cards/image_04.png').default%>" alt="Фото травы 2">
               <div class="result-card__description">
@@ -83,9 +87,9 @@
                 о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
               <a class="link result-card__source" href="https://ria.ru/" target="_blank">РИА</a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="result-card">
+          <!-- <div class="result-card">
               <img class="result-card__image" src="<%=require('./images/cards/image_06.png').default%>" alt="Фото травы 4">
               <div class="result-card__description">
               <p class="result-card__date">2 августа, 2019</p>
@@ -94,9 +98,9 @@
                 национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
               <a class="link result-card__source" href="https://zen.yandex.ru/" target="_blank">Дзен</a>
             </div>
-          </div> -->
+          </div>
 
-          <!-- <div class="result-card">
+          <div class="result-card">
               <img class="result-card__image" src="<%=require('./images/cards/image_01.png').default%>" alt="Фото травы 5">
               <div class="result-card__description">
               <p class="result-card__date">2 августа, 2019</p>
@@ -105,9 +109,9 @@
                 чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
               <a class="link result-card__source" href="https://www.afisha.ru/" target="_blank">Афиша</a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="result-card">
+          <!-- <div class="result-card">
               <img class="result-card__image" src="<%=require('./images/cards/image_05.png').default%>" alt="Фото травы 6">
               <div class="result-card__description">
               <p class="result-card__date">2 августа, 2019</p>

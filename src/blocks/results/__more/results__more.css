@@ -18,11 +18,18 @@
 
   color: #1A1B22;
   cursor: pointer;
+
+  display: none;
 }
 
 .results__more::hover {
   background: #fff;
   opacity: 0.9;
+}
+
+.results__more_active {
+  display: block;
+  background-color: blueviolet;
 }
 
 @media (max-width: 320px) {
