@@ -2,7 +2,7 @@ import "./style.css";
 import {NewsApi} from "./NewsApi.js";
 import {ResultCard} from "./ResultCard.js";
 import {CardList} from "./CardList.js";
-import {CommitsApi} from "./CommitsApi.js";
+import {CommitApi} from "./CommitApi.js";
 
 const searchButton = document.querySelector('.search__button');
 const moreButton = document.querySelector('.results__more');
@@ -100,8 +100,9 @@ if (keyWord) {
 let commitsTitle = document.querySelector('.commits__title');
 
   function requestCommits() {
-    let commitsApiObj = new CommitsApi();
+    let commitsApiObj = new CommitApi();
     let commitsList = commitsApiObj.getData();
+    // console.log("list of commits: " + commitsList);
   }
 
 if (commitsTitle) {
@@ -133,7 +134,7 @@ import "./swiper.js";
 var mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
@@ -146,7 +147,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  centeredSlides: true,
+  centeredSlides: false,
   spaceBetween: 16,
   slidesPerView: 3.4,
 
@@ -160,7 +161,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     768: {
       slidesPerView: 2.2,
       spaceBetween: 8,
-      centeredSlides: true,
+      centeredSlides: false,
     },
     1440: {
       slidesPerView: 3.4,

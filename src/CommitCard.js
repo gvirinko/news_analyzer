@@ -1,16 +1,17 @@
 
 export class CommitCard {
   constructor(name, email, date, message, avatar) {
-    this.container = this.create();
+    // this.container = this.create();
     this.name = name;
     this.email = email;
     this.date = date;
     this.message = message;
     this.avatar = avatar;
-    this.create();
+    // this.create();
   }
 
   create() {
+    // console.log(this);
     const commitCard = document.createElement('a');
     const commitDate = document.createElement('p');
     const commitAuthor = document.createElement('div');
@@ -44,10 +45,8 @@ export class CommitCard {
     commitEmail.textContent = this.email;
     commitDate.textContent = this.date;
     commitText.textContent = this.message;
-    commitAvatar.src = avatar;
-
-    console.log(commitCard);
-
+    commitAvatar.src = this.avatar;
+    // console.log(commitCard);
     return commitCard;
   }
 
