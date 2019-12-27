@@ -1,7 +1,7 @@
 import { NewsCard } from "./NewsCard.js";
 import {CardList} from "./CardList.js";
-import {createResultCards} from "./index.js"
-import {renderCards} from "./index.js";
+import {createResultCards} from "./index.js";
+// import {renderCards} from "./index.js";
 
 const preloaderBlock = document.querySelector('.preloader');
 const resultsBlock = document.querySelector('.results');
@@ -16,8 +16,6 @@ export class NewsApi {
     this.searchWord = searchWord;
     this.dateFrom = dateFrom;
     this.dateTo = dateTo;
-    this.url = this.createUrl();
-    // this.storeData();
   }
 
   createUrl() {
@@ -64,30 +62,3 @@ export class NewsApi {
       })
   }
 }
-
-
-
-
-// getData() {
-//   let cardUrl = this.createUrl();
-//     this.httpGet(cardUrl)
-//     .then(result=>{
-//       let data = [];
-//       let localStoragedData = [];
-//       for (let i = 0; i < result.totalResults; i++) {
-//         let urlToImage = result.articles[i].urlToImage;
-//         let publishedAt = result.articles[i].publishedAt;
-//         let title = result.articles[i].title;
-//         let text = result.articles[i].description;
-//         let source = result.articles[i].source.name;
-
-//         let resultCardObject = new ResultCard(urlToImage, publishedAt, title, text, source);
-//         let singleCard = resultCardObject.create();
-//         // console.log(singleCard);
-//         data.push(singleCard);
-//       }
-//       let cardList = new CardList(data);
-//       cardList.renderCards();
-//     })
-//     .catch(error=>{console.log(error);})
-// }

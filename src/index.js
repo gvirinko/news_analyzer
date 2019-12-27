@@ -33,8 +33,9 @@ function onSearchClick(event) {
   return true;
 }
 
-function saveDataFromApi (searchWord) {
-  let apiKey = "a9927459bf884f1395b3cf33e659b1c1";
+export function saveDataFromApi (searchWord) {
+  // let apiKey = "a9927459bf884f1395b3cf33e659b1c1";
+  let apiKey = "90b94e06f4c34ae88dc61b57c1aeb5e4";
   let now = Date.now();
   let minusWeek = now - 604800000;
   let dateTo = new Date(now);
@@ -50,11 +51,10 @@ function saveDataFromApi (searchWord) {
   // an empty list of cards.
   _cards.deleteCards();
 
-  let apiObj = new NewsApi(apiKey, searchWord, dateFrom, dateTo);
+  let apiObj = new NewsApi(apiKey, searchWord, dateFrom.toISOString(), dateTo.toISOString());
   apiObj.storeData(_cards);
 }
-
-function getDataFromStorage(searchWord) {
+export function getDataFromStorage(searchWord) {
   let storedData = JSON.parse(localStorage.getItem(searchWord));
   return storedData;
 }
@@ -62,15 +62,19 @@ function getDataFromStorage(searchWord) {
 export function createResultCards(searchWord) {
   let result = getDataFromStorage(searchWord);
   let cardsArray = [];
-  for (let i = 0; i < result.totalResults; i++) {
+  console.log(result.articles.length);
+  for (let i = 0; i < result.articles.length; i++) {
+    console.log(result.articles[i]);
+    console.log(i);
     let urlToImage = result.articles[i].urlToImage;
-      if (!urlToImage) {
-        urlToImage = "./images/nophoto.png";
-      }
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
     let text = result.articles[i].description;
     let source = result.articles[i].source.name;
+
+    if(!urlToImage || !publishedAt || !title || !text || !source) {
+      continue;
+    }
 
     let resultCardObject = new NewsCard(urlToImage, publishedAt, title, text, source);
     let singleCard = resultCardObject.create();

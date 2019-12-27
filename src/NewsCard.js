@@ -2,7 +2,6 @@ import {changeDateFormat} from './index.js';
 
 export class NewsCard {
   constructor(urlToImage, publishedAt, title, text, source) {
-    this.container = this.create();
     this.urlToImage = urlToImage;
     this.publishedAt = publishedAt;
     this.title = title;
@@ -44,16 +43,4 @@ export class NewsCard {
     resultSource.textContent = this.source;
     return resultCard;
   }
-
-  // changeDateFormat(date) {
-  //   let toLocaleStringDate = new Date(date).toLocaleString('ru', {
-  //     year: 'numeric',
-  //     month: 'long',
-  //     day: 'numeric'
-  //   });
-  //   let year = toLocaleStringDate.slice(0, -3).slice(-4);
-  //   let dayAndMonth = toLocaleStringDate.slice(0, -3).slice(0, -5);
-  //   let formattedDate = dayAndMonth + ', ' + year;
-  //   return formattedDate;
-  // }
 }

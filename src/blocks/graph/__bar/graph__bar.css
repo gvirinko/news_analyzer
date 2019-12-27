@@ -4,7 +4,7 @@
   width: 100%;
   align-self: center;
   color: white;
-  padding: 0 0 0 10px;
+  padding: 0;
   position: relative;
   background-color: #2F71E5;
 
@@ -17,9 +17,9 @@
   align-items: center;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: black;
 }
-
+/*
 @media (max-width: 320px) {
 
 }
@@ -55,8 +55,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
   }
-}
-
+} */
+/*
 .graph__bar_15 {
   max-width: calc(15%);
 }
@@ -77,4 +77,4 @@
 }
 .graph__bar_34 {
   max-width: calc(34%);
-}
+} */

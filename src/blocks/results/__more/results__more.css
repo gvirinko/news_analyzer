@@ -29,7 +29,6 @@
 
 .results__more_active {
   display: block;
-  background-color: blueviolet;
 }
 
 @media (max-width: 320px) {
