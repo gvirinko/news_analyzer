@@ -19,7 +19,7 @@ if (keyWord) {
 }
 
 function fetchDataForAnalytics(searchWord) {
-  console.log(searchWord);
+  // console.log(searchWord);
   let result = getDataFromStorage(searchWord);
   let data = {};
   let totalNumberInTitle = 0;
@@ -28,25 +28,30 @@ function fetchDataForAnalytics(searchWord) {
     let yyyymmdd = new Date();
     yyyymmdd.setDate(yyyymmdd.getDate() - i);
     let yyyymmdd_string = yyyymmdd.toISOString();
-    data[yyyymmdd_string.substring(0, yyyymmdd_string.indexOf('T'))] = 0;
+    let yyyymmdd_short = yyyymmdd_string.substring(0, yyyymmdd_string.indexOf('T'));
+    data[yyyymmdd_short] = 0;
+    let month = getMonth(yyyymmdd_short);
+    const graphMonth = document.querySelector('.graph__month');
+    graphMonth.textContent = month;
+
+    /*
+    daysOfWeek = {}
+    const date2 = new Date('1995-12-17');
+    daysOfweek[yyyymmdd_string] = yyyymmdd.toLocaleDateString('ru', { weekday: 'short'});
+    */
   }
-  console.log("data = " + Object.keys(data));
   for (let i = 0; i < result.articles.length; i++) {
     let d = result.articles[i].publishedAt;
     let yyyymmdd = d.substring(0, d.indexOf('T'));
     let numberInTitle = searchInText(result.articles[i].title, searchWord);
     totalNumberInTitle += numberInTitle;
     let numberInText = searchInText(result.articles[i].description, searchWord);
-    console.log("number in title = " + numberInTitle + "number in text = " + numberInText);
     totalMentions += numberInText;
     data[yyyymmdd] += numberInTitle + numberInText;
-    console.log(numberInTitle + numberInText);
   }
   totalMentions += totalNumberInTitle;
   statsNumber.textContent = result.articles.length;
-  // console.log("l: " + result.articles.length);
   statsMentions.textContent = totalNumberInTitle;
-  // console.log(data);
   return [data, totalMentions]
 }
 
@@ -70,6 +75,7 @@ function generateDiagram(frequencies, total) {
   let dates = Object.keys(frequencies);
   dates = dates.sort();
   for (let date of dates) {
+
     const graphRow = document.createElement('div');
     const graphDate = document.createElement('div');
     const graphBar = document.createElement('div');
@@ -81,12 +87,38 @@ function generateDiagram(frequencies, total) {
 
     graphRow.appendChild(graphDate);
     graphRow.appendChild(graphBar);
-    graphDate.textContent = date;
+    graphDate.textContent = getDayAndWeekDay(date);
     graphBar.textContent = frequencies[date];
+    if (frequencies[date] === 0) {
+      graphBar.style.color = "black";
+    }
     // console.log(frequencies[date]/total);
     graphBar.style.maxWidth = Math.round(frequencies[date]/total * 100) + "%";
-    console.log(graphBar.style.maxWidth);
+    // console.log(graphBar.style.maxWidth);
     graphContainer.appendChild(graphRow);
-
   }
+}
+
+function getMonth(yyyymmdd) {
+  let t = yyyymmdd.split("-");
+  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
+  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
+  let month = new Date(timestamp).toLocaleString('ru', {
+    month: 'long',
+  });
+  return month;
+}
+
+function getDayAndWeekDay(date) {
+  let t = date.split("-");
+  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
+  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
+  let day = new Date(timestamp).toLocaleString('ru', {
+    day: 'numeric',
+  });
+  let weekDay = new Date(timestamp).toLocaleString('ru', {
+    weekday: 'short',
+  });
+  let dayAndWeekDay = day + ', ' + weekDay;
+  return dayAndWeekDay;
 }

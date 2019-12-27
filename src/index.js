@@ -62,10 +62,7 @@ export function getDataFromStorage(searchWord) {
 export function createResultCards(searchWord) {
   let result = getDataFromStorage(searchWord);
   let cardsArray = [];
-  console.log(result.articles.length);
   for (let i = 0; i < result.articles.length; i++) {
-    console.log(result.articles[i]);
-    console.log(i);
     let urlToImage = result.articles[i].urlToImage;
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
