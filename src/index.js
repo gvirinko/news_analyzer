@@ -1,16 +1,15 @@
 import "./style.css";
 import './about.js';
 import './analytics.js';
+import './swiper-custom.js'
 import {NewsApi} from "./NewsApi.js";
 import {NewsCard} from "./NewsCard.js";
 import {CardList} from "./CardList.js";
 
 const searchButton = document.querySelector('.search__button');
-const moreButton = document.querySelector('.results__more');
 const preloaderBlock = document.querySelector('.preloader');
 const searchValidation = document.querySelector('.search__validation');
 const resultsBlock = document.querySelector('.results');
-const searchForm = document.forms.form_search;
 const resultsMore = document.querySelector('.results__more');
 
 let _cards = new CardList();
@@ -62,7 +61,7 @@ export function getDataFromStorage(searchWord) {
 export function createResultCards(searchWord) {
   let result = getDataFromStorage(searchWord);
   let cardsArray = [];
-  for (let i = 0; i < result.articles.length; i++) {
+  for (let i = 0; i < result.totalResults; i++) {
     let urlToImage = result.articles[i].urlToImage;
     let publishedAt = result.articles[i].publishedAt;
     let title = result.articles[i].title;
@@ -91,66 +90,3 @@ export function changeDateFormat(date) {
   let formattedDate = dayAndMonth + ', ' + year;
   return formattedDate;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------------------------------
-
-
-
-
-
-
-import "../node_modules/swiper/js/swiper.js";
-import "./swiper.js";
-
-var mySwiper = new Swiper ('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  centeredSlides: false,
-  spaceBetween: 16,
-  slidesPerView: 3.4,
-
-  // uniqueNavElements: true,
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1.1,
-      spaceBetween: 8,
-    },
-    768: {
-      slidesPerView: 2.2,
-      spaceBetween: 8,
-      centeredSlides: false,
-    },
-    1440: {
-      slidesPerView: 3.4,
-      spaceBetween: 16,
-    },
-  },
-
-  allowTouchMove: false,
-
-})

@@ -8,5 +8,5 @@ const commitsTitle = document.querySelector('.commits__title');
   }
 
 if (commitsTitle) {
-  commitsTitle.addEventListener('click', requestCommits);
+  requestCommits();
 }

@@ -4,7 +4,6 @@ import {getDataFromStorage} from './index.js';
 const statsNumber = document.querySelector('.stats__number');
 const statsMentions = document.querySelector('.stats__mentions');
 
-
 let keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
   let lastSearchWord = localStorage.getItem(lastSearchItemKeyName);
@@ -19,7 +18,6 @@ if (keyWord) {
 }
 
 function fetchDataForAnalytics(searchWord) {
-  // console.log(searchWord);
   let result = getDataFromStorage(searchWord);
   let data = {};
   let totalNumberInTitle = 0;
@@ -33,12 +31,6 @@ function fetchDataForAnalytics(searchWord) {
     let month = getMonth(yyyymmdd_short);
     const graphMonth = document.querySelector('.graph__month');
     graphMonth.textContent = month;
-
-    /*
-    daysOfWeek = {}
-    const date2 = new Date('1995-12-17');
-    daysOfweek[yyyymmdd_string] = yyyymmdd.toLocaleDateString('ru', { weekday: 'short'});
-    */
   }
   for (let i = 0; i < result.articles.length; i++) {
     let d = result.articles[i].publishedAt;
@@ -67,10 +59,8 @@ function searchInText(text, searchWord) {
    return index;
 }
 
-// generateDiagram creates the DOM frequency diagram from the mentions per day
-// and the total number of mentions
+// generateDiagram creates the DOM object with number of mentions both in titles and descriptions
 function generateDiagram(frequencies, total) {
-  console.log(frequencies);
   const graphContainer = document.querySelector('.graph__body');
   let dates = Object.keys(frequencies);
   dates = dates.sort();
@@ -83,7 +73,6 @@ function generateDiagram(frequencies, total) {
     graphRow.classList.add('graph__row');
     graphDate.classList.add('graph__date');
     graphBar.classList.add('graph__bar');
-    // graphBar.classList.add(`graph__bar_${date}`);
 
     graphRow.appendChild(graphDate);
     graphRow.appendChild(graphBar);
@@ -92,9 +81,7 @@ function generateDiagram(frequencies, total) {
     if (frequencies[date] === 0) {
       graphBar.style.color = "black";
     }
-    // console.log(frequencies[date]/total);
     graphBar.style.maxWidth = Math.round(frequencies[date]/total * 100) + "%";
-    // console.log(graphBar.style.maxWidth);
     graphContainer.appendChild(graphRow);
   }
 }

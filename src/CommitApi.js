@@ -1,4 +1,3 @@
-import {getCommits} from "./index.js";
 import { CommitCard } from "./CommitCard.js";
 
 const _swiperWrapper = document.querySelector('.swiper-wrapper');

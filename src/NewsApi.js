@@ -1,11 +1,7 @@
-import { NewsCard } from "./NewsCard.js";
-import {CardList} from "./CardList.js";
 import {createResultCards} from "./index.js";
-// import {renderCards} from "./index.js";
 
 const preloaderBlock = document.querySelector('.preloader');
-const resultsBlock = document.querySelector('.results');
-const searchValidation = document.querySelector('.search__validation');
+// const searchValidation = document.querySelector('.search__validation');
 export const lastSearchItemKeyName = "lastSearchItem";
 
 
