@@ -38,7 +38,6 @@ function onSearchClick(event) {
 export function saveDataFromApi (searchWord) {
   // let apiKey = "a9927459bf884f1395b3cf33e659b1c1";
   let apiKey = "90b94e06f4c34ae88dc61b57c1aeb5e4";
-  // let minusWeek = now - 604800000;
   let now = Date.now();
   let dateTo = new Date(now);
   let dateFrom = new Date(now)
@@ -47,10 +46,6 @@ export function saveDataFromApi (searchWord) {
   resultsBlock.classList.add('results__active');
   preloaderBlock.classList.add('preloader_active');
 
-  localStorage.removeItem(searchWord);
-  // NB: we must clear the DOM object here, since we want to reset it even if
-  // the upcoming API request returns an error; in that case, the user will see
-  // an empty list of cards.
   _cards.deleteCards();
 
   let apiObj = new NewsApi(apiKey, searchWord, dateFrom.toISOString(), dateTo.toISOString());

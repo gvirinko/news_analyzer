@@ -21,7 +21,6 @@ export class NewsApi {
     + this.dateFrom + "&to="
     + this.dateTo + "&pageSize=100&apiKey="
     + this.apiKey;
-    console.log(url);
     return url;
   }
 
@@ -32,7 +31,7 @@ export class NewsApi {
             return result.json();
         }
         throw new Error('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.');
-        return Promise.reject(`Ошибка: ${result.status}`);
+        // return Promise.reject(`Ошибка: ${result.status}`);
     })
   }
 
@@ -40,6 +39,7 @@ export class NewsApi {
     let cardUrl = this.createUrl();
       this.httpGet(cardUrl)
       .then(result => {
+        localStorage.removeItem(this.searchWord);
         localStorage.setItem(this.searchWord, JSON.stringify(result));
         localStorage.setItem(lastSearchItemKeyName, this.searchWord);
         return this.searchWord;
@@ -53,9 +53,12 @@ export class NewsApi {
         cardListObj.renderCards();
       })
       .catch(error=>{
-        preloaderBlock.classList.remove('preloader_active');
-        console.log(error);
+          // NB: we must clear the DOM object here, since we want to reset it
+          // even if the upcoming API request returns an error; in that case,
+          // the user will see an empty list of cards.
+        localStorage.removeItem(this.searchWord);
         localStorage.removeItem(lastSearchItemKeyName);
+        preloaderBlock.classList.remove('preloader_active');
         resultsError.classList.add('results__error_active');
         resultsError.textContent = error;
         moreButton.classList.remove('results__more_active');

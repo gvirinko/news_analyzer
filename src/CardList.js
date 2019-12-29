@@ -1,7 +1,7 @@
 const _cardContainer = document.querySelector('.result-card__container');
 const noResults = document.querySelector('.no-results');
 const resultsBlock = document.querySelector('.results');
-const resultsMore = document.querySelector('.results__more');
+const moreButton = document.querySelector('.results__more');
 
 
 export class CardList {
@@ -26,12 +26,12 @@ export class CardList {
 
     for (let i = this.renderIndex; i < Math.min(this.data.length, this.renderIndex + renderLimit); i++) {
       _cardContainer.appendChild(this.data[i]);
-      resultsMore.classList.add('results__more_active');
+      moreButton.classList.add('results__more_active');
 
     }
     // To control when the "More" button should be hidden
     if ((this.data.length - this.renderIndex) <= 3) {
-      resultsMore.classList.remove('results__more_active');
+      moreButton.classList.remove('results__more_active');
     }
     this.renderIndex += renderLimit;
 
