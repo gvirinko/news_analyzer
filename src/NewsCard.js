@@ -1,4 +1,4 @@
-import {changeDateFormat} from './index.js';
+import {changeDateFormat} from './utils.js';
 
 export class NewsCard {
   constructor(urlToImage, publishedAt, title, text, source, url) {

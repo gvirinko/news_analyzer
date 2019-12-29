@@ -1,4 +1,4 @@
-import {changeDateFormat} from './index.js';
+import {changeDateFormat} from './utils.js';
 
 export class CommitCard {
   constructor(name, email, date, message, avatar) {

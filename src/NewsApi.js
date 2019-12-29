@@ -1,9 +1,9 @@
-import {createResultCards} from "./index.js";
+import {createResultCards} from "./search.js";
+import {deleteArticles, putArticles} from "./localStorage.js";
 
 const preloaderBlock = document.querySelector('.preloader');
 const resultsError = document.querySelector('.results__error');
 const moreButton = document.querySelector('.results__more');
-export const lastSearchItemKeyName = "lastSearchItem";
 
 
 
@@ -39,9 +39,8 @@ export class NewsApi {
     let cardUrl = this.createUrl();
       this.httpGet(cardUrl)
       .then(result => {
-        localStorage.removeItem(this.searchWord);
-        localStorage.setItem(this.searchWord, JSON.stringify(result));
-        localStorage.setItem(lastSearchItemKeyName, this.searchWord);
+        deleteArticles(this.searchWord);
+        putArticles(this.searchWord, result);
         return this.searchWord;
       })
       .then(searchWord => {
@@ -56,8 +55,7 @@ export class NewsApi {
           // NB: we must clear the DOM object here, since we want to reset it
           // even if the upcoming API request returns an error; in that case,
           // the user will see an empty list of cards.
-        localStorage.removeItem(this.searchWord);
-        localStorage.removeItem(lastSearchItemKeyName);
+        deleteArticles(this.searchWord);
         preloaderBlock.classList.remove('preloader_active');
         resultsError.classList.add('results__error_active');
         resultsError.textContent = error;

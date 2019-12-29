@@ -1,12 +1,13 @@
-import {lastSearchItemKeyName} from "./NewsApi.js";
-import {getDataFromStorage} from './index.js';
+import {searchInText, getMonth, getDayAndWeekDay} from './utils.js';
+import {getArticles, getLastSearchWord} from './localStorage.js'
 
 const statsNumber = document.querySelector('.stats__number');
 const statsMentions = document.querySelector('.stats__mentions');
 
 let keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
-  let lastSearchWord = localStorage.getItem(lastSearchItemKeyName);
+  let lastSearchWord = getLastSearchWord();
+  console.log(lastSearchWord);
   if (lastSearchWord != null) {
     keyWord.textContent = lastSearchWord;
     let data = fetchDataForAnalytics(lastSearchWord);
@@ -18,7 +19,7 @@ if (keyWord) {
 }
 
 function fetchDataForAnalytics(searchWord) {
-  let result = getDataFromStorage(searchWord);
+  let result = getArticles(searchWord);
   let data = {};
   let totalNumberInTitle = 0;
   let totalMentions = 0;
@@ -47,20 +48,9 @@ function fetchDataForAnalytics(searchWord) {
   return [data, totalMentions]
 }
 
-function searchInText(text, searchWord) {
-  let index = 0;
-  let lowerSearchWord = searchWord.toLowerCase();
-  let splitText = text.split(/[\s!?:;.,:"'«»]+/);
-  for (let i = 0; i < splitText.length; i++) {
-    if (splitText[i].toLowerCase() === lowerSearchWord) {
-      index++;
-    }
-  }
-   return index;
-}
-
 // generateDiagram creates the DOM object with number of mentions both in titles and descriptions
 function generateDiagram(frequencies, total) {
+  console.log("freq = " + frequencies + "total = " + total);
   const graphContainer = document.querySelector('.graph__body');
   let dates = Object.keys(frequencies);
   dates = dates.sort();
@@ -81,31 +71,11 @@ function generateDiagram(frequencies, total) {
     if (frequencies[date] === 0) {
       graphBar.style.color = "black";
     }
-    graphBar.style.maxWidth = Math.round(frequencies[date]/total * 100) + "%";
+    if (total != 0) {
+      graphBar.style.maxWidth = Math.round(frequencies[date]/total * 100) + "%";
+    } else {
+      graphBar.style.maxWidth = "0%";
+    }
     graphContainer.appendChild(graphRow);
   }
-}
-
-function getMonth(yyyymmdd) {
-  let t = yyyymmdd.split("-");
-  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
-  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
-  let month = new Date(timestamp).toLocaleString('ru', {
-    month: 'long',
-  });
-  return month;
-}
-
-function getDayAndWeekDay(date) {
-  let t = date.split("-");
-  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
-  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
-  let day = new Date(timestamp).toLocaleString('ru', {
-    day: 'numeric',
-  });
-  let weekDay = new Date(timestamp).toLocaleString('ru', {
-    weekday: 'short',
-  });
-  let dayAndWeekDay = day + ', ' + weekDay;
-  return dayAndWeekDay;
 }
