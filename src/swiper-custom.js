@@ -1,8 +1,8 @@
 
-import "../node_modules/swiper/js/swiper.js";
-import "./swiper.js";
+import Swiper from "../node_modules/swiper/js/swiper.js";
 
-var mySwiper = new Swiper ('.swiper-container', {
+
+var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
