@@ -10,7 +10,7 @@ const resultsBlock = document.querySelector('.results');
 export function getOnSearchClick(cards) {
   return function(event) {
     event.preventDefault();
-    let searchWord = document.querySelector('.search__input').value;
+    const searchWord = document.querySelector('.search__input').value;
     if (searchWord.length === 0) {
       searchValidation.classList.add('search__validation_error');
       return false;
@@ -46,7 +46,7 @@ export function createResultCards(searchWord) {
 // Function loadCardsFromLocalStorage allows results data display
 // after reopening browser tab or after returning from another page
 export function loadCardsFromLocalStorage(cards) {
-  let searchWord = getLastSearchWord();
+  const searchWord = getLastSearchWord();
   if (searchWord) {
     let cardsArray = createResultCards(searchWord);
     cards.populateCards(cardsArray);
@@ -55,11 +55,10 @@ export function loadCardsFromLocalStorage(cards) {
 }
 
 function saveDataFromApi (searchWord, cards) {
-  // let apiKey = "a9927459bf884f1395b3cf33e659b1c1";
-  let apiKey = "90b94e06f4c34ae88dc61b57c1aeb5e4";
-  let now = Date.now();
-  let dateTo = new Date(now);
-  let dateFrom = new Date(now)
+  const apiKey = "90b94e06f4c34ae88dc61b57c1aeb5e4";
+  const now = Date.now();
+  const dateTo = new Date(now);
+  const dateFrom = new Date(now)
   dateFrom.setDate(dateTo.getDate() - 6);
 
   resultsBlock.classList.add('results__active');
@@ -67,6 +66,6 @@ function saveDataFromApi (searchWord, cards) {
 
   cards.deleteCards();
 
-  let apiObj = new NewsApi(apiKey, searchWord, dateFrom.toISOString(), dateTo.toISOString());
+  const apiObj = new NewsApi(apiKey, searchWord, dateFrom.toISOString(), dateTo.toISOString());
   apiObj.storeData(cards);
 }

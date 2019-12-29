@@ -11,6 +11,9 @@ export function changeDateFormat(date) {
 }
 
 export function searchInText(text, searchWord) {
+  if (!text) {
+    return 0;
+  }
   let index = 0;
   let lowerSearchWord = searchWord.toLowerCase();
   let splitText = text.split(/[\s!?:;.,:"'«»]+/);

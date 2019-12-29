@@ -16,7 +16,7 @@ export class NewsApi {
   }
 
   createUrl() {
-    let url = "https://newsapi.org/v2/everything?q="
+    const url = "https://newsapi.org/v2/everything?q="
     + this.searchWord + "&language=ru&from="
     + this.dateFrom + "&to="
     + this.dateTo + "&pageSize=100&apiKey="
@@ -36,7 +36,7 @@ export class NewsApi {
   }
 
   storeData(cardListObj) {
-    let cardUrl = this.createUrl();
+    const cardUrl = this.createUrl();
       this.httpGet(cardUrl)
       .then(result => {
         deleteArticles(this.searchWord);

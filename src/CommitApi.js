@@ -21,7 +21,7 @@ export class CommitApi {
   getData() {
     this.httpGet()
     .then(result => {
-      let commitsArray = [];
+      const commitsArray = [];
       for (let i = 0; i < result.length; i++) {
         let name = result[i].commit.committer.name;
         let email = result[i].commit.committer.email;

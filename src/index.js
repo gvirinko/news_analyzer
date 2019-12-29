@@ -10,7 +10,7 @@ const searchButton = document.querySelector('.search__button');
 const resultsMore = document.querySelector('.results__more');
 
 if (searchButton) {
-  let cards = new CardList();
+  const cards = new CardList();
 
   searchButton.addEventListener('click', getOnSearchClick(cards));
   resultsMore.addEventListener('click', cards.onMoreCardsClick.bind(cards));

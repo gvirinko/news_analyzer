@@ -6,12 +6,12 @@ const statsMentions = document.querySelector('.stats__mentions');
 
 const keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
-  let lastSearchWord = getLastSearchWord();
+  const lastSearchWord = getLastSearchWord();
   if (lastSearchWord != null) {
     keyWord.textContent = lastSearchWord;
-    let data = fetchDataForAnalytics(lastSearchWord);
-    let frequencies = data[0];
-    let totalMentions = data[1];
+    const data = fetchDataForAnalytics(lastSearchWord);
+    const frequencies = data[0];
+    const totalMentions = data[1];
     generateDiagram(frequencies, totalMentions);
 
   }
@@ -33,8 +33,8 @@ function fetchDataForAnalytics(searchWord) {
     graphMonth.textContent = month;
   }
   for (let i = 0; i < result.articles.length; i++) {
-    let publishedTimestamp = result.articles[i].publishedAt;
-    let dateString = publishedTimestamp.substring(0, publishedTimestamp.indexOf('T'));
+    const publishedTimestamp = result.articles[i].publishedAt;
+    const dateString = publishedTimestamp.substring(0, publishedTimestamp.indexOf('T'));
     let numberInTitle = searchInText(result.articles[i].title, searchWord);
     totalNumberInTitle += numberInTitle;
     let numberInText = searchInText(result.articles[i].description, searchWord);
@@ -50,8 +50,7 @@ function fetchDataForAnalytics(searchWord) {
 // generateDiagram creates the DOM object with number of mentions both in titles and descriptions
 function generateDiagram(frequencies, total) {
   const graphContainer = document.querySelector('.graph__body');
-  let dates = Object.keys(frequencies);
-  dates = dates.sort();
+  const dates = Object.keys(frequencies).sort();
   for (let date of dates) {
 
     const graphRow = document.createElement('div');
