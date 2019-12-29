@@ -22,24 +22,20 @@ export function searchInText(text, searchWord) {
    return index;
 }
 
-export function getMonth(yyyymmdd) {
-  let t = yyyymmdd.split("-");
-  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
-  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
-  let month = new Date(timestamp).toLocaleString('ru', {
+export function getMonth(timestamp) {
+  return timestamp.toLocaleString('ru', {
     month: 'long',
   });
-  return month;
 }
 
-export function getDayAndWeekDay(date) {
-  let t = date.split("-");
-  let mmddyyyy = t[1]+"/"+t[2]+"/"+ t[0];
-  let timestamp = new Date(mmddyyyy).getTime(); //will alert 1330210800000
-  let day = new Date(timestamp).toLocaleString('ru', {
+export function getDayAndWeekDay(dateString) {
+  let fields = dateString.split("-");
+  let monthDayYearDateString = fields[1]+"/"+fields[2]+"/"+ fields[0];
+  let date = new Date(monthDayYearDateString)
+  let day = date.toLocaleString('ru', {
     day: 'numeric',
   });
-  let weekDay = new Date(timestamp).toLocaleString('ru', {
+  let weekDay = date.toLocaleString('ru', {
     weekday: 'short',
   });
   let dayAndWeekDay = day + ', ' + weekDay;

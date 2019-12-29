@@ -4,10 +4,9 @@ import {getArticles, getLastSearchWord} from './localStorage.js'
 const statsNumber = document.querySelector('.stats__number');
 const statsMentions = document.querySelector('.stats__mentions');
 
-let keyWord = document.querySelector('.stats__keyword');
+const keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
   let lastSearchWord = getLastSearchWord();
-  console.log(lastSearchWord);
   if (lastSearchWord != null) {
     keyWord.textContent = lastSearchWord;
     let data = fetchDataForAnalytics(lastSearchWord);
@@ -24,23 +23,23 @@ function fetchDataForAnalytics(searchWord) {
   let totalNumberInTitle = 0;
   let totalMentions = 0;
   for (let i = 6; i >= 0; i--) {
-    let yyyymmdd = new Date();
-    yyyymmdd.setDate(yyyymmdd.getDate() - i);
-    let yyyymmdd_string = yyyymmdd.toISOString();
-    let yyyymmdd_short = yyyymmdd_string.substring(0, yyyymmdd_string.indexOf('T'));
-    data[yyyymmdd_short] = 0;
-    let month = getMonth(yyyymmdd_short);
+    const timestamp = new Date();
+    timestamp.setDate(timestamp.getDate() - i);
+    const timestampString = timestamp.toISOString();
+    const dateString = timestampString.substring(0, timestampString.indexOf('T'));
+    data[dateString] = 0;
+    const month = getMonth(timestamp);
     const graphMonth = document.querySelector('.graph__month');
     graphMonth.textContent = month;
   }
   for (let i = 0; i < result.articles.length; i++) {
-    let d = result.articles[i].publishedAt;
-    let yyyymmdd = d.substring(0, d.indexOf('T'));
+    let publishedTimestamp = result.articles[i].publishedAt;
+    let dateString = publishedTimestamp.substring(0, publishedTimestamp.indexOf('T'));
     let numberInTitle = searchInText(result.articles[i].title, searchWord);
     totalNumberInTitle += numberInTitle;
     let numberInText = searchInText(result.articles[i].description, searchWord);
     totalMentions += numberInText;
-    data[yyyymmdd] += numberInTitle + numberInText;
+    data[dateString] += numberInTitle + numberInText;
   }
   totalMentions += totalNumberInTitle;
   statsNumber.textContent = result.articles.length;
@@ -50,7 +49,6 @@ function fetchDataForAnalytics(searchWord) {
 
 // generateDiagram creates the DOM object with number of mentions both in titles and descriptions
 function generateDiagram(frequencies, total) {
-  console.log("freq = " + frequencies + "total = " + total);
   const graphContainer = document.querySelector('.graph__body');
   let dates = Object.keys(frequencies);
   dates = dates.sort();
