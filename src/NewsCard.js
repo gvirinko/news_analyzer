@@ -1,16 +1,17 @@
 import {changeDateFormat} from './index.js';
 
 export class NewsCard {
-  constructor(urlToImage, publishedAt, title, text, source) {
+  constructor(urlToImage, publishedAt, title, text, source, url) {
     this.urlToImage = urlToImage;
     this.publishedAt = publishedAt;
     this.title = title;
     this.text = text;
     this.source = source;
+    this.url = url;
   }
 
   create() {
-    const resultCard = document.createElement('div');
+    const resultCard = document.createElement('a');
     const resultImage = document.createElement('img');
     const resultDescription = document.createElement('div');
     const resultDate = document.createElement('p');
@@ -35,8 +36,9 @@ export class NewsCard {
     resultCard.appendChild(resultImage);
     resultCard.appendChild(resultDescription);
 
+    resultCard.href = this.url;
+    resultCard.target = '_blank';
     resultImage.src = this.urlToImage;
-
     resultDate.textContent = changeDateFormat(this.publishedAt);
     resultTitle.textContent = this.title;
     resultText.textContent = this.text;

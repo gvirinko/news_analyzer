@@ -49,6 +49,10 @@
   .result-card__text {
     margin-top: 16px;
     margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
 
     font-family: Roboto, Georgia, serif;
     font-style: normal;

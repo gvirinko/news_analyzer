@@ -1,7 +1,8 @@
 import {createResultCards} from "./index.js";
 
 const preloaderBlock = document.querySelector('.preloader');
-// const searchValidation = document.querySelector('.search__validation');
+const resultsError = document.querySelector('.results__error');
+const moreButton = document.querySelector('.results__more');
 export const lastSearchItemKeyName = "lastSearchItem";
 
 
@@ -20,6 +21,7 @@ export class NewsApi {
     + this.dateFrom + "&to="
     + this.dateTo + "&pageSize=100&apiKey="
     + this.apiKey;
+    console.log(url);
     return url;
   }
 
@@ -29,7 +31,7 @@ export class NewsApi {
         if (result.ok) {
             return result.json();
         }
-        // throw new Error('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз');
+        throw new Error('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.');
         return Promise.reject(`Ошибка: ${result.status}`);
     })
   }
@@ -53,8 +55,10 @@ export class NewsApi {
       .catch(error=>{
         preloaderBlock.classList.remove('preloader_active');
         console.log(error);
-        // searchValidation.classList.add('search__validation_error');
-        // searchValidation.textContent = error;
+        localStorage.removeItem(lastSearchItemKeyName);
+        resultsError.classList.add('results__error_active');
+        resultsError.textContent = error;
+        moreButton.classList.remove('results__more_active');
       })
   }
 }

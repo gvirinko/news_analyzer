@@ -18,6 +18,7 @@ export class CardList {
   renderCards (renderLimit = 3) {
     if (this.data.length === 0) {
       noResults.classList.add('no-results__active');
+      moreButton.classList.remove('results__more_active');
       return;
     }
     noResults.classList.remove('no-results__active');
