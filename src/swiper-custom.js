@@ -39,7 +39,9 @@ var mySwiper = new Swiper('.swiper-container', {
       spaceBetween: 16,
     },
   },
+  observer: true,
+  observeParents: true,
 
   allowTouchMove: false,
 
-})
+});

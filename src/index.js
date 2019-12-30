@@ -1,7 +1,6 @@
 import "./style.css";
 import './about.js';
 import './analytics.js';
-import './swiper-custom.js'
 
 import {CardList} from "./CardList.js";
 import {getOnSearchClick, loadCardsFromLocalStorage} from './search.js';
