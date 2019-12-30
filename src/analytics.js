@@ -18,8 +18,8 @@ if (keyWord) {
 }
 
 function fetchDataForAnalytics(searchWord) {
-  let result = getArticles(searchWord);
-  let data = {};
+  const result = getArticles(searchWord);
+  const data = {};
   let totalNumberInTitle = 0;
   let totalMentions = 0;
   for (let i = 6; i >= 0; i--) {

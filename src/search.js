@@ -22,8 +22,8 @@ export function getOnSearchClick(cards) {
 }
 
 export function createResultCards(searchWord) {
-  let result = getArticles(searchWord);
-  let cardsArray = [];
+  const result = getArticles(searchWord);
+  const cardsArray = [];
   for (let i = 0; i < result.articles.length; i++) {
     let urlToImage = result.articles[i].urlToImage;
     let publishedAt = result.articles[i].publishedAt;
@@ -36,8 +36,8 @@ export function createResultCards(searchWord) {
       continue;
     }
 
-    let resultCardObject = new NewsCard(urlToImage, publishedAt, title, text, source, url);
-    let singleCard = resultCardObject.create();
+    const resultCardObject = new NewsCard(urlToImage, publishedAt, title, text, source, url);
+    const singleCard = resultCardObject.create();
     cardsArray.push(singleCard);
   }
   return cardsArray;
@@ -48,7 +48,7 @@ export function createResultCards(searchWord) {
 export function loadCardsFromLocalStorage(cards) {
   const searchWord = getLastSearchWord();
   if (searchWord) {
-    let cardsArray = createResultCards(searchWord);
+    const cardsArray = createResultCards(searchWord);
     cards.populateCards(cardsArray);
     cards.renderCards();
   }
