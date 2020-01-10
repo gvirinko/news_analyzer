@@ -1,6 +1,6 @@
-import { CommitCard } from "./CommitCard.js";
-
-const _swiperWrapper = document.querySelector('.swiper-wrapper');
+import { CommitCard } from '../components/CommitCard.js';
+import {swiperWrapper} from '../constants.js';
+// const swiperWrapper = document.querySelector('.swiper-wrapper');
 
 
 export class CommitApi {
@@ -36,7 +36,7 @@ export class CommitApi {
     })
     .then(commitsArray => {
       for (let i = 0; i < commitsArray.length; i++) {
-        _swiperWrapper.appendChild(commitsArray[i]);
+        swiperWrapper.appendChild(commitsArray[i]);
       }
     })
     .catch(error=>{

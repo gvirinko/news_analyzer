@@ -1,9 +1,11 @@
-import {createResultCards} from "./search.js";
+import {createResultCards} from "../search.js";
 import {deleteArticles, putArticles} from "./localStorage.js";
 
-const preloaderBlock = document.querySelector('.preloader');
-const resultsError = document.querySelector('.results__error');
-const moreButton = document.querySelector('.results__more');
+import {preloaderBlock, resultsError, moreButton, searchInput, searchButton} from '../constants.js';
+
+// const preloaderBlock = document.querySelector('.preloader');
+// const resultsError = document.querySelector('.results__error');
+// const moreButton = document.querySelector('.results__more');
 
 
 
@@ -60,6 +62,12 @@ export class NewsApi {
         resultsError.classList.add('results__error_active');
         resultsError.textContent = error;
         moreButton.classList.remove('results__more_active');
+      })
+      .finally(function(){
+        console.log(searchInput.value);
+        // searchInput.disabled = false;
+        // searchButton.disabled = false;
+        // searchButton.removeAttribute('disabled');
       })
   }
 }

@@ -1,7 +1,9 @@
-const _cardContainer = document.querySelector('.result-card__container');
-const noResults = document.querySelector('.no-results');
-const resultsBlock = document.querySelector('.results');
-const moreButton = document.querySelector('.results__more');
+import {noResults, resultsBlock, moreButton, cardContainer} from '../constants.js';
+
+// const cardContainer = document.querySelector('.result-card__container');
+// const noResults = document.querySelector('.no-results');
+// const resultsBlock = document.querySelector('.results');
+// const moreButton = document.querySelector('.results__more');
 
 
 export class CardList {
@@ -25,7 +27,7 @@ export class CardList {
     resultsBlock.classList.add('results__active');
 
     for (let i = this.renderIndex; i < Math.min(this.data.length, this.renderIndex + renderLimit); i++) {
-      _cardContainer.appendChild(this.data[i]);
+      cardContainer.appendChild(this.data[i]);
       moreButton.classList.add('results__more_active');
 
     }
@@ -39,8 +41,8 @@ export class CardList {
 
   // deleteCards clears the data and the _cardContainer
   deleteCards() {
-    while (_cardContainer.hasChildNodes()) {
-      _cardContainer.removeChild(_cardContainer.lastChild);
+    while (cardContainer.hasChildNodes()) {
+      cardContainer.removeChild(cardContainer.lastChild);
     }
   }
 

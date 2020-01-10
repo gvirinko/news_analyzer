@@ -1,8 +1,9 @@
-import {searchInText, getMonth, getDayAndWeekDay} from './utils.js';
-import {getArticles, getLastSearchWord} from './localStorage.js'
+import {searchInText, getMonth, getDayAndWeekDay} from './js/utils.js';
+import {getArticles, getLastSearchWord} from './js/modules/localStorage.js';
 
-const statsNumber = document.querySelector('.stats__number');
-const statsMentions = document.querySelector('.stats__mentions');
+import {statsNumber, statsMentions} from './js/constants.js';
+// const statsNumber = document.querySelector('.stats__number');
+// const statsMentions = document.querySelector('.stats__mentions');
 
 const keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
@@ -52,11 +53,9 @@ function generateDiagram(frequencies, total) {
   const graphContainer = document.querySelector('.graph__body');
   const dates = Object.keys(frequencies).sort();
   for (let date of dates) {
-
     const graphRow = document.createElement('div');
     const graphDate = document.createElement('div');
     const graphBar = document.createElement('div');
-
     graphRow.classList.add('graph__row');
     graphDate.classList.add('graph__date');
     graphBar.classList.add('graph__bar');

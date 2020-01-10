@@ -24,6 +24,11 @@
   color: #b6bcbf;
 }
 
+.search__input::disabled {
+  color: blue;
+  background-color: brown;
+}
+
 @media (max-width: 320px) {
   .search__input {
     min-height: 46px;
