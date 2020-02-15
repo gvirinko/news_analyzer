@@ -35,90 +35,26 @@
         </div>
       </section>
 
-      <!-- <section class="preloader">
+      <section class="preloader">
           <i class="circle-preloader"></i>
           <div class="preloader__message">Идет поиск новостей...</div>
-      </section> -->
+      </section>
 
-       <!-- <section class="no-results">
+       <section class="no-results">
         <img class="no-results__emoji" src="<%=require('./images/not-found_v1.png').default%>" alt="Печальный emoji">
         <h2 class="no-results__message">Ничего не найдено</h2>
         <h3 class="no-results__clarification">К сожалению, по вашему запросу ничего не найдено.</h3>
-      </section> -->
+      </section>
 
       <section class="results">
-        <h2 class="results__title">Результаты поиска</h2>
+        <h2 class="results__title">Результаты поиска:</h2>
         <a class="link results__link" href="analytics.html">Посмотреть аналитику
-          <img src="<%=require('./images/arrow.png').default%>" alt=""></a>
-        <div class="result-card__container">
-
-          <div class="result-card">
-            <img class="result-card__image" src="<%=require('./images/cards/image_08.png').default%>" alt="Фото травы 1">
-            <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">Национальное достояние – парки</h4>
-              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <a class="link result-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
-            </div>
-          </div>
-
-          <div class="result-card">
-              <img class="result-card__image" src="<%=require('./images/cards/image_04.png').default%>" alt="Фото травы 2">
-              <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
-              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-              <a class="link result-card__source" href="https://meduza.io/" target="_blank">Медуза</a>
-            </div>
-          </div>
-
-          <div class="result-card">
-              <img class="result-card__image" src="<%=require('./images/cards/image_07.png').default%>" alt="Фото травы 3">
-              <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
-                о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-              <a class="link result-card__source" href="https://ria.ru/" target="_blank">РИА</a>
-            </div>
-          </div>
-
-          <div class="result-card">
-              <img class="result-card__image" src="<%=require('./images/cards/image_06.png').default%>" alt="Фото травы 4">
-              <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">Национальное достояние – парки</h4>
-              <p class="result-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-                национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <a class="link result-card__source" href="https://zen.yandex.ru/" target="_blank">Дзен</a>
-            </div>
-          </div>
-
-          <!-- <div class="result-card">
-              <img class="result-card__image" src="<%=require('./images/cards/image_01.png').default%>" alt="Фото травы 5">
-              <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">Лесные огоньки: история одной фотографии</h4>
-              <p class="result-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-              <a class="link result-card__source" href="https://www.afisha.ru/" target="_blank">Афиша</a>
-            </div>
-          </div>
-
-          <div class="result-card">
-              <img class="result-card__image" src="<%=require('./images/cards/image_05.png').default%>" alt="Фото травы 6">
-              <div class="result-card__description">
-              <p class="result-card__date">2 августа, 2019</p>
-              <h4 class="result-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-              <p class="result-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
-                о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-              <a class="link result-card__source" href="https://zona.media/" target="_blank">Медиазона</a>
-            </div>
-          </div> -->
-
-        </div>
+          <img src="<%=require('./images/arrow.png').default%>" alt="">
+        </a>
+        <p class = "results__error">Во время запроса произошла ошибка.
+          Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.
+        </p>
+        <div class="result-card__container"></div>
 
         <button class="link results__more">Показать еще</button>
 
@@ -133,7 +69,6 @@
             <img src="<%=require('./images/image-03.png').default%>" alt="Фотография автора проекта" class="author__avatar">
           </picture>
 
-        <!-- <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта"> -->
         <div class="author__container">
           <h2 class="author__title">Об авторе</h2>
           <div class="author__text">
@@ -162,7 +97,7 @@
     </div>
   </div>
 
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 </body>
 </html>

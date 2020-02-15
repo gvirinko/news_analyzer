@@ -3,6 +3,7 @@
   width: 100%;
   height: 272px;
   border-radius: 16px 16px 0 0;
+  /* background-size: contain; */
 }
 
 @media (max-width: 320px) {
@@ -17,9 +18,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .result-card__image {
     height: 150px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .result-card__image {
+    height: 220px;
   }
 }
 

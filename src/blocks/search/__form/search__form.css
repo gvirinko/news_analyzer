@@ -11,7 +11,8 @@
   background: #fff;
   border: 1px solid #D1D2D6;
   box-sizing: border-box;
-  backdrop-filter: blur(8px);
+  /* backdrop-filter: blur(8px); */
+
   border-radius: 100px;
 }
 
@@ -24,7 +25,6 @@
     height: 56px;
   }
 }
-/* ---------- 321 */
 @media (min-width: 321px) and (max-width: 768px) {
   .search__form {
     display: flex;
@@ -55,7 +55,7 @@
     background: #fff;
     border: 1px solid #D1D2D6;
     box-sizing: border-box;
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     border-radius: 100px;
   }
 }

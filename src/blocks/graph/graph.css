@@ -7,6 +7,7 @@
 @import url(./__row/graph__row.css);
 @import url(./__scale/graph__scale.css);
 @import url(./__title/graph__title.css);
+@import url(./__month/graph__month.css);
 
 .graph {
   position: relative;

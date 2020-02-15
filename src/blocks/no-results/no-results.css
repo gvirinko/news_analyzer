@@ -8,6 +8,11 @@
   margin-top: 0;
   margin-bottom: 0;
   background: #F5F6F7;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
+  display: none;
+}
+
+.no-results__active {
+  display: flex;
 }

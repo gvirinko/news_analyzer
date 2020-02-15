@@ -13,6 +13,8 @@
   max-width: 400px;
   max-height: 576px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: #fff;
   border-radius: 16px;
@@ -31,7 +33,7 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .result-card {
     max-height: 446.13px;
     max-width: 288px;
@@ -45,10 +47,12 @@
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .result-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 224px;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 200px; */
+    min-width: 224px;
+    max-width: 270px;
     max-height: 420px;
     margin-bottom: 22px;
 
@@ -60,11 +64,11 @@
 
 @media (min-width: 1280px) and (max-width: 1440px) {
   .result-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 380px;
-    max-height: 420px;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    max-width: 350px;
+    max-height: 520px;
     margin-bottom: 22px;
 
     background-color: #fff;
@@ -75,9 +79,9 @@
 
 @media (min-width: 1440px) {
   .result-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
     max-width: 400px;
     max-height: 576px;
     margin-bottom: 16px;

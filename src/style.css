@@ -1,7 +1,7 @@
 @import url(./vendor/normalize.css);
 
 @import url(./blocks/screen-size/screen-size.css);
-@import url(./blocks/circle-preloader/circle-preloader.css);
+@import url(./blocks/preloader/preloader.css);
 @import url(./blocks/no-results/no-results.css);
 
 @import url(./blocks/link/link.css);
@@ -28,10 +28,10 @@
 @import url(./blocks/commits/commits.css);
 @import url(./blocks/commit-card/commit-card.css);
 
-*  {
+/* *  {
   box-sizing: border-box;
   border: 1px solid red;
-  }
+  } */
 
 @font-face {
     src: url(./fonts/roboto-regular-webfont.woff) format('woff');

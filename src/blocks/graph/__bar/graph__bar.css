@@ -4,7 +4,7 @@
   width: 100%;
   align-self: center;
   color: white;
-  padding: 0 0 0 10px;
+  padding: 0;
   position: relative;
   background-color: #2F71E5;
 
@@ -17,64 +17,4 @@
   align-items: center;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-@media (max-width: 320px) {
-
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 1440px) {
-
-}
-
-@media (min-width: 1440px) {
-  .graph__bar {
-    height: 24px;
-    left: 0;
-    width: 100%;
-    position: relative;
-    display: flex;
-    padding: 0 0 0 10px;
-    align-self: center;
-    align-items: center;
-
-    background-color: #2F71E5;
-
-    font-family: Roboto, Georgia, serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-}
-
-.graph__bar_15 {
-  max-width: calc(15%);
-}
-.graph__bar_18 {
-  max-width: calc(18%);
-}
-.graph__bar_11 {
-  max-width: calc(11%);
-}
-.graph__bar_39 {
-  max-width: calc(39%);
-}
-.graph__bar_45 {
-  max-width: calc(45%);
-}
-.graph__bar_73 {
-  max-width: calc(73%);
-}
-.graph__bar_34 {
-  max-width: calc(34%);
 }
