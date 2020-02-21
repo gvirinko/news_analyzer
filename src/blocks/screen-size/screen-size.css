@@ -1,8 +1,0 @@
-@import url(./screen-size__container.css);
-
-.screen-size {
-  position: relative;
-
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
