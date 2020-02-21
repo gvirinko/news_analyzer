@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Этот сайт является сервисом для анализа происходящих в мире событий">
-  <meta name="author" content="Ирина Гнатив">
+  <meta name="description" content="This website is a service for analyzing world events">
+  <meta name="author" content="Iryna Gnativ">
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="shortcut icon" href="../src/images/favicon.ico">
   <title>NewsAnalyzer</title>
@@ -16,32 +16,36 @@
         <section class="header">
           <div class="header__title">NewsAnalyzer</div>
           <nav class="nav header__nav">
-            <a class="link nav__item header__nav-item" href="index.html">Главная</a>
-            <a class="link nav__item nav__item_active header__nav-item header__nav-item_color_dark" href="about.html">О проекте</a>
+            <a class="link nav__item header__nav-item" href="index.html">Main</a>
+            <a class="link nav__item nav__item_active header__nav-item header__nav-item_color_dark" href="about.html">About Project</a>
           </nav>
         </section>
 
       <section class="about-project">
-        <h1 class="about-project__title">Клиентам</h1>
+        <h1 class="about-project__title">About Project</h1>
         <div class="about-project__text">
-            <p class="about-project__para">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент,
-            какими технологиями владеет.</p>
-            <p class="about-project__para">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
-            Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах,
-            выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-            <p class="about-project__para">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
-            пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-            <p class="about-project__para">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
-            Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
-            Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением.
-            А значит, потенциальная аудитория возрастает.</p>
-            <p class="about-project__para">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться
-            к этому студенту.</p>
+            <p class="about-project__para">The purpose of this project is to find and analyze news based on the entered search word.
+              News are loaded using <a href="https://newsapi.org" class="link">newsapi.org</a>, with indication of date and media source.
+            </p>
+            <p class="about-project__para">On the Analytics page there is a graph showing how the number of mentions has been distributed
+              during every day of the last week, as well as total statistics of the number of mentions in news and in news titles only.
+            </p>
+            <p class="about-project__para">The About Project page also contains a slider with my GitHub commits to this project.
+            </p>
+            <p class="about-project__para">The coding has been performed as per BEM-methodology.
+              BEM makes the site flexible and scalable. It allows easy and prompt adding
+              of new pages and functionality which leads to easier site support.</p>
+            <p class="about-project__para">The cards are fetched asynchronously from the server.
+              It means that the site continues to operate and wait for the response from server. Quite convenient.
+            </p>
+            <p class="about-project__para">Webpack technology has been used during project build.
+              The code is optimized, hence the site works quicker. It is also supports old browsers.
+            </p>
         </div>
       </section>
 
       <section class="tech">
-        <h2 class="tech__title">Используемые технологии</h2>
+        <h2 class="tech__title">Technologies Used</h2>
         <div class="tech__container">
           <div class="tech-card">
             <p class="tech-card__name">HTML</p>
@@ -74,23 +78,20 @@
       </section>
 
       <section class="author">
-        <img src="<%=require('./images/image-03.png').default%>" class="author__avatar" alt="Фотография автора проекта">
+        <img src="<%=require('./images/IMG_6501.jpg').default%>" class="author__avatar" alt="Фотография автора проекта">
         <div class="author__container">
-          <h2 class="author__title">Об авторе</h2>
+          <h2 class="author__title">About Author</h2>
           <div class="author__text ">
-            <p class="author__para">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
-                чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="author__para"> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились
-            и чем можете помочь потенциальным заказчикам.</p>
-            <p class="author__para">Если хотите, оставьте свои контакты: email и телефон.
-            Так заказчики смогут с вами связаться.</p>
+            <p class="author__para">Hello, I’m Iryna Gnativ, the author of this project.</p>
+            <p class="author__para">Its aim is to show what technologies I’ve learnt during
+              the Yandex.Praktikum course for frontend developers.</p>
           </div>
         </div>
       </section>
 
       <section class="commits">
-          <h2 class="commits__title">История коммитов из GitHub</h2>
-          <a class="link commits__github" href="https://github.com/gvirinko/news_analyzer/commits/level-1" target="_blank">Открыть в GitHub
+          <h2 class="commits__title">History of GitHub commits</h2>
+          <a class="link commits__github" href="https://github.com/gvirinko/news_analyzer/commits/level-1" target="_blank">Open at GitHub
             <img src="<%=require('./images/arrow.png').default%>" alt="" class="link__arrow">
           </a>
           <div class="swiper-container">
@@ -104,14 +105,14 @@
         </section>
 
         <section class="footer">
-          <div class="footer__copyright">© 2019  Supersite</div>
+          <div class="footer__copyright">© 2019  Gnativ</div>
           <nav class="nav footer__nav">
-            <a class="link nav__item footer__nav-item" href="./index.html">Главная</a>
-            <a class="link nav__item footer__nav-item" href="./about.html">О проекте</a>
-            <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+            <a class="link nav__item footer__nav-item" href="./index.html">Main</a>
+            <a class="link nav__item footer__nav-item" href="./about.html">About Project</a>
+            <a class="link nav__item footer__nav-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Yandex</a>
           </nav>
           <div class="footer__social">
-            <a class="link" href="https://github.com/" target="_blank"><img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub"></a>
+            <a class="link" href="https://github.com/gvirinko" target="_blank"><img src="../src/images/github.png" class="footer__social-icon" alt="Логотип GitHub"></a>
             <a class="link" href="https://www.facebook.com/" target="_blank"><img src="../src/images/fb.png" class="footer__social-icon" alt="Логотип Facebook"></a>
           </div>
         </section>

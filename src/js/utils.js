@@ -26,7 +26,7 @@ export function searchInText(text, searchWord) {
 }
 
 export function getMonth(timestamp) {
-  return timestamp.toLocaleString('ru', {
+  return timestamp.toLocaleString('en', {
     month: 'long',
   });
 }
@@ -35,10 +35,10 @@ export function getDayAndWeekDay(dateString) {
   let fields = dateString.split("-");
   let monthDayYearDateString = fields[1]+"/"+fields[2]+"/"+ fields[0];
   let date = new Date(monthDayYearDateString)
-  let day = date.toLocaleString('ru', {
+  let day = date.toLocaleString('en', {
     day: 'numeric',
   });
-  let weekDay = date.toLocaleString('ru', {
+  let weekDay = date.toLocaleString('en', {
     weekday: 'short',
   });
   let dayAndWeekDay = day + ', ' + weekDay;

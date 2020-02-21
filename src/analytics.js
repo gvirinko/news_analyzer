@@ -2,8 +2,6 @@ import {searchInText, getMonth, getDayAndWeekDay} from './js/utils.js';
 import {getArticles, getLastSearchWord} from './js/modules/localStorage.js';
 
 import {statsNumber, statsMentions} from './js/constants.js';
-// const statsNumber = document.querySelector('.stats__number');
-// const statsMentions = document.querySelector('.stats__mentions');
 
 const keyWord = document.querySelector('.stats__keyword');
 if (keyWord) {
@@ -14,7 +12,6 @@ if (keyWord) {
     const frequencies = data[0];
     const totalMentions = data[1];
     generateDiagram(frequencies, totalMentions);
-
   }
 }
 
@@ -23,9 +20,9 @@ function fetchDataForAnalytics(searchWord) {
   const data = {};
   let totalNumberInTitle = 0;
   let totalMentions = 0;
-  for (let i = 6; i >= 0; i--) {
+  for (let weekDay = 6; weekDay >= 0; weekDay--) {
     const timestamp = new Date();
-    timestamp.setDate(timestamp.getDate() - i);
+    timestamp.setDate(timestamp.getDate() - weekDay);
     const timestampString = timestamp.toISOString();
     const dateString = timestampString.substring(0, timestampString.indexOf('T'));
     data[dateString] = 0;

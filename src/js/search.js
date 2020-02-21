@@ -3,11 +3,6 @@ import {NewsCard} from './components/NewsCard.js';
 import {getArticles, getLastSearchWord} from './modules/localStorage.js'
 
 import {preloaderBlock, searchValidation, resultsBlock, searchInput, searchButton} from './constants.js';
-// import { searchInText } from './utils.js';
-// const searchInput = document.querySelector('.search__input');
-// const preloaderBlock = document.querySelector('.preloader');
-// const searchValidation = document.querySelector('.search__validation');
-// const resultsBlock = document.querySelector('.results');
 
 export function getOnSearchClick(cards) {
   return function(event) {
@@ -16,31 +11,30 @@ export function getOnSearchClick(cards) {
     // searchButton.disabled = true;
 
     const searchWord = searchInput.value;
+    searchInput.setCustomValidity('');
 
     if (searchWord.length === 0) {
-      searchValidation.classList.add('search__validation_error');
-      // searchInput.setCustomValidity('Введите, пожалуйста, поисковый запрос');
-
+      // searchValidation.classList.add('search__validation_error');
+      searchInput.setCustomValidity('Please enter a search topic');
       return false;
     }
-    searchValidation.classList.remove('search__validation_error');
-    // if (!protectionFromXSS(searchWord)) {
-    //   searchInput.setCustomValidity('Пожалуйста, не используйте символы < и >');
-    //   console.log('Пожалуйста, не используйте символы < и >');
-    //   return false;
-    // }
+    // searchValidation.classList.remove('search__validation_error');
+
+    if (!protectionFromXSS(searchWord)) {
+      searchInput.setCustomValidity('Please do not use symbols < and >');
+      return false;
+    }
     saveDataFromApi(searchWord, cards);
     return true;
   }
 }
 
-// function protectionFromXSS (searchWord) {
-//   if(searchWord.includes("<") || searchWord.includes(">")) {
-//     // console.log("protected");
-//     return false;
-//   }
-//   return true;
-//  }
+function protectionFromXSS (searchWord) {
+  if(searchWord.includes("<") || searchWord.includes(">")) {
+    return false;
+  }
+  return true;
+ }
 
 
 export function createResultCards(searchWord) {

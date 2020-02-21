@@ -19,7 +19,7 @@ export class NewsApi {
 
   createUrl() {
     const url = "https://newsapi.org/v2/everything?q="
-    + this.searchWord + "&language=ru&from="
+    + this.searchWord + "&language=en&from="
     + this.dateFrom + "&to="
     + this.dateTo + "&pageSize=100&apiKey="
     + this.apiKey;
