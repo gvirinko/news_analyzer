@@ -31,7 +31,7 @@ Production bundle is deployed to Github Pages via Webpack script.
 - for local display: `npm run build && npm run dev`;
 - for deployment on gh-pages: `npm run deploy`.
 
-**Technologies Used:** HTML, CSS, GIT, Webpack.
+**Technologies Used:** HTML, CSS, JavaScript, GIT, Webpack.
 
 Webpack minimizes (uglifies) and transpiles code, as well as sets vendor prefixes.
 In this regard, the following plugins have been installed:
